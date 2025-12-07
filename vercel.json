@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/whitepaper_part1.html" }
+  ]
+}
+
