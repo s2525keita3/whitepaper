@@ -1,6 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/whitepaper_part1.html" }
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
-
