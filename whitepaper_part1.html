@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>訪問看護経営の標準教科書 | 一般社団法人全国訪問看護経営研究協会</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="元救命ICU看護師が実証した、年商5億円・5拠点展開の「ユニットエコノミクス」と「組織行動学」。訪問看護経営の完全ガイド。" />
+  <meta name="keywords" content="訪問看護,経営,ステーション,開業,多店舗展開,ユニットエコノミクス" />
+  <meta name="author" content="渋谷慶太" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="訪問看護経営の標準教科書" />
+  <meta property="og:description" content="年商5億円・5拠点展開の「ユニットエコノミクス」と「組織行動学」" />
+  <meta property="og:type" content="article" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- Fallback inline styles for critical CSS -->
+  <style>
+    /* Critical CSS for above-the-fold content */
+:root {
+  --page-width: 210mm;
+  --page-height: 297mm;
+
+  --font-body: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-size-body: 13.5px;
+  --font-size-small: 11px;
+
+  --color-bg-canvas: #eeeeee;
+  --color-bg-page: #ffffff;
+  --color-text: #222222;
+  --color-text-muted: #666666;
+  --color-heading: #111111;
+  --color-border: #E0E3EB;
+  --color-soft: #F5F7FB;
+
+  --color-brand: #1a365d;
+  --color-brand-soft: #e8eef5;
+  --color-brand-gradient: linear-gradient(135deg, #1a365d, #2c5282);
+
+  --color-success: #0F9D58;
+  --color-success-soft: #E6F4EA;
+  --color-warning: #F9AB00;
+  --color-warning-soft: #FEF7E0;
+  --color-alert: #D93025;
+  --color-alert-soft: #FDECEA;
+  --color-info: #4285F4;
+  --color-info-soft: #E8F0FE;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg-canvas);
+}
+
+@page {
+  size: A4;
+  margin: 16mm 18mm;
+}
+
+@media print {
+  body { background: #ffffff; }
+  .page { margin: 0; box-shadow: none; border-radius: 0; }
+  .no-print { display: none !important; }
+}
+
+.document { padding: 16px 0 32px; }
+
+.page {
+  position: relative;
+  width: var(--page-width);
+  min-height: var(--page-height);
+  margin: 0 auto 16px;
+  background: var(--color-bg-page);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.page-inner {
+  max-width: 130mm;
+  margin: 22mm auto 20mm;
+}
+
+.page--cover .page-inner {
+  max-width: 140mm;
+  margin-top: 30mm;
+}
+
+.page--toc .page-inner {
+  max-width: 150mm;
+  margin-top: 22mm;
+}
+
+.page--wide .page-inner {
+  max-width: 170mm;
+}
+
+.page-break { page-break-after: always; }
+
+.header-meta {
+  position: absolute;
+  top: 12mm;
+  left: 18mm;
+  right: 18mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.header-meta__left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-meta {
+  position: absolute;
+  bottom: 10mm;
+  left: 18mm;
+  right: 18mm;
+  border-top: 1px solid var(--color-border);
+  padding-top: 4mm;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.badge--outline {
+  border: 1px solid var(--color-brand);
+  color: var(--color-brand);
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 10px;
+  color: var(--color-heading);
+  line-height: 1.4;
+}
+
+h1 { font-size: 22px; margin-bottom: 8px; }
+
+h2 {
+  font-size: 16px;
+  margin-top: 16px;
+  border-left: 3px solid var(--color-brand);
+  padding-left: 8px;
+}
+
+h3 { font-size: 14px; margin-top: 14px; }
+h4 { font-size: 13px; margin-top: 10px; }
+
+p {
+  font-size: var(--font-size-body);
+  line-height: 1.8;
+  margin: 0 0 8px;
+}
+
+.lead {
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 12px;
+}
+
+.small {
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+ul, ol {
+  font-size: var(--font-size-body);
+  line-height: 1.8;
+  margin: 0 0 8px 20px;
+  padding: 0;
+}
+
+li { margin-bottom: 4px; }
+
+.cover-title {
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cover-subtitle {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 18px;
+  border-left: 3px solid var(--color-brand);
+  padding-left: 12px;
+  font-style: italic;
+}
+
+.cover-tagline {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--color-brand-soft);
+  color: var(--color-brand);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.cover-meta {
+  margin-top: 40px;
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.cover-meta strong { color: var(--color-heading); }
+
+.cover-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12mm;
+  background: var(--color-brand-gradient);
+  opacity: 0.85;
+}
+
+.cover-strip__text {
+  position: absolute;
+  right: 24mm;
+  bottom: 4mm;
+  font-size: 10px;
+  color: #ffffff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.toc-block {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  background: #fafbff;
+  margin-bottom: 14px;
+}
+
+.toc-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.toc-item__label { color: var(--color-text-muted); }
+.toc-item__page { font-variant-numeric: tabular-nums; color: var(--color-text-muted); }
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.two-column--wide-left { grid-template-columns: 1.3fr 1fr; }
+
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.callout {
+  border-left: 3px solid var(--color-brand);
+  background: var(--color-soft);
+  padding: 8px 10px;
+  margin: 8px 0 12px;
+  font-size: 12.5px;
+  border-radius: 0 6px 6px 0;
+}
+
+.callout--info { border-left-color: var(--color-info); background: var(--color-info-soft); }
+.callout--success { border-left-color: var(--color-success); background: var(--color-success-soft); }
+.callout--warning { border-left-color: var(--color-warning); background: var(--color-warning-soft); }
+.callout--alert { border-left-color: var(--color-alert); background: var(--color-alert-soft); }
+
+.callout-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 12.5px;
+}
+
+.label {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--color-soft);
+  color: var(--color-brand);
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.label--info { background: var(--color-info-soft); color: var(--color-info); }
+.label--success { background: var(--color-success-soft); color: var(--color-success); }
+.label--warning { background: var(--color-warning-soft); color: var(--color-warning); }
+.label--alert { background: var(--color-alert-soft); color: var(--color-alert); }
+
+.checklist {
+  list-style: none;
+  margin-left: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 4px;
+}
+
+.checklist li::before {
+  content: "☐";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 11px;
+  color: var(--color-brand);
+}
+
+.checklist--done li::before {
+  content: "✔";
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 12px;
+  font-size: 12.5px;
+}
+
+th, td {
+  border: 1px solid var(--color-border);
+  padding: 6px 8px;
+  text-align: left;
+}
+
+th {
+  background: var(--color-soft);
+  font-weight: 500;
+}
+
+tr:nth-child(even) { background: #fafbfc; }
+
+.chapter-heading { margin-bottom: 6px; }
+
+.chapter-heading__eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+  margin-bottom: 4px;
+}
+
+.chapter-heading__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.chapter-heading__goal {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.section-separator {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px dashed var(--color-border);
+}
+
+.steps {
+  counter-reset: step-counter;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.steps li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+  counter-increment: step-counter;
+}
+
+.steps li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: var(--color-brand);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.card__title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.card__content {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.card--highlight {
+  border-color: var(--color-brand);
+  background: var(--color-brand-soft);
+}
+
+.metric-box {
+  background: var(--color-soft);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.metric-box__label {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-bottom: 2px;
+}
+
+.metric-box__value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-brand);
+}
+
+.metric-box__note {
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.number-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: var(--color-brand);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.arrow-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.arrow-list li {
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.arrow-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-brand);
+}
+
+.highlight-box {
+  background: var(--color-brand-soft);
+  border: 1px solid var(--color-brand);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.quote-box {
+  background: var(--color-soft);
+  border-left: 4px solid var(--color-brand);
+  padding: 12px 16px;
+  margin: 12px 0;
+  font-style: italic;
+}
+
+.target-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: var(--color-warning-soft);
+  color: #9a6700;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+  </style>
+</head>
+<body>
+  <div class="document">
+
+    <!-- ============================================
+         PAGE 1: 表紙
+         ============================================ -->
+    <section class="page page--cover page-break">
+      <div class="page-inner">
+        <div class="cover-tagline">WHITE PAPER 2025</div>
+
+        <h1 class="cover-title">訪問看護経営の<br>標準教科書</h1>
+
+        <p class="cover-subtitle">
+          元救命ICU看護師が実証した<br>
+          年商5億円・5拠点展開の<br>
+          「ユニットエコノミクス」と「組織行動学」
+        </p>
+
+        <p class="lead" style="margin-top: 24px;">
+          2040年「多死社会」に向けた<br>
+          訪問看護ステーション経営の完全ガイド
+        </p>
+
+        <div style="margin-top: 20px;">
+          <span class="target-badge">対象読者</span>
+          <span style="font-size: 12px; color: var(--color-text-muted);">
+            年商1億円未満の経営者 / 多店舗展開を目指す方 / 開業準備中の方
+          </span>
+        </div>
+
+        <div class="cover-meta">
+          <p>
+            発行日：2025年12月<br>
+            著作権：<strong>一般社団法人全国訪問看護経営研究協会</strong><br>
+            著者：渋谷 慶太
+          </p>
+        </div>
+      </div>
+
+      <div class="cover-strip">
+        <div class="cover-strip__text">JAPAN HOME VISIT NURSING MANAGEMENT RESEARCH ASSOCIATION</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 2: 目次
+         ============================================ -->
+    <section class="page page--toc page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">Ver 1.0</div>
+      </div>
+
+      <div class="page-inner">
+        <h1>目次</h1>
+        <p class="small" style="margin-bottom: 16px;">Table of Contents</p>
+
+        <div class="toc-block">
+          <div class="toc-title">序章</div>
+          <div class="toc-item">
+            <span class="toc-item__label">市場機会と参入根拠</span>
+            <span class="toc-item__page">03</span>
+          </div>
+        </div>
+
+        <div class="toc-block">
+          <div class="toc-title">第1章</div>
+          <div class="toc-item">
+            <span class="toc-item__label">ユニットエコノミクスの完全解剖</span>
+            <span class="toc-item__page">05</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__label">　├ 財務モデルの分岐点（都市 vs 地方）</span>
+            <span class="toc-item__page">05</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__label">　├ 事務部門の導入タイミング</span>
+            <span class="toc-item__page">06</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__label">　└ ユニットの拡張と限界</span>
+            <span class="toc-item__page">07</span>
+          </div>
+        </div>
+
+        <div class="toc-block">
+          <div class="toc-title">第2章</div>
+          <div class="toc-item">
+            <span class="toc-item__label">エリア・ドミナント戦略</span>
+            <span class="toc-item__page">08</span>
+          </div>
+        </div>
+
+        <div class="toc-block">
+          <div class="toc-title">第3章</div>
+          <div class="toc-item">
+            <span class="toc-item__label">組織文化と規律</span>
+            <span class="toc-item__page">10</span>
+          </div>
+        </div>
+
+        <div class="toc-block">
+          <div class="toc-title">第4章</div>
+          <div class="toc-item">
+            <span class="toc-item__label">財務ポートフォリオ戦略</span>
+            <span class="toc-item__page">12</span>
+          </div>
+        </div>
+
+        <div class="toc-block">
+          <div class="toc-title">第5章</div>
+          <div class="toc-item">
+            <span class="toc-item__label">0→1マーケティング</span>
+            <span class="toc-item__page">14</span>
+          </div>
+        </div>
+
+        <div class="toc-block">
+          <div class="toc-title">第6章</div>
+          <div class="toc-item">
+            <span class="toc-item__label">スケーリングと多角化の罠</span>
+            <span class="toc-item__page">16</span>
+          </div>
+        </div>
+
+        <div class="toc-block">
+          <div class="toc-title">第7章</div>
+          <div class="toc-item">
+            <span class="toc-item__label">品質管理とリスクヘッジ</span>
+            <span class="toc-item__page">18</span>
+          </div>
+        </div>
+
+        <div class="toc-block">
+          <div class="toc-title">終章</div>
+          <div class="toc-item">
+            <span class="toc-item__label">あなたへの提案</span>
+            <span class="toc-item__page">20</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>目次</div>
+        <div>02</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 3: 序章 - 市場機会と参入根拠
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">序章</div>
+      </div>
+
+      <div class="page-inner">
+        <div class="chapter-heading">
+          <div class="chapter-heading__eyebrow">INTRODUCTION</div>
+          <div class="chapter-heading__title">市場機会と参入根拠</div>
+          <p class="chapter-heading__goal">なぜ今、訪問看護なのか。データが示す社会的要請を理解する</p>
+        </div>
+
+        <h2>0.1 2040年問題と「死に場所」の枯渇</h2>
+        <p class="small" style="margin-bottom: 8px;">「多死社会」におけるインフラとしての訪問看護</p>
+
+        <p>多くの経営者が「2025年問題（団塊の世代が75歳以上になる）」に目を奪われているが、それは序章に過ぎない。真の危機的局面は、高齢者人口がピークに達し、現役世代が激減する<strong>「2040年」</strong>に訪れる。</p>
+
+        <div class="callout callout--alert">
+          <div class="callout-title">📊 データが示す「看取り難民」の現実</div>
+          <ul class="arrow-list" style="margin-top: 8px;">
+            <li><strong>死亡者数の爆発的増加：</strong>2040年には約168万人でピーク（2020年比で約20%増）</li>
+            <li><strong>病床の削減と機能分化：</strong>病院は「治す場所」に特化し、「死ぬ場所」ではなくなる</li>
+            <li><strong>需給ギャップの発生：</strong>約<strong>47万人</strong>の「看取り難民」が発生すると推計</li>
+          </ul>
+        </div>
+
+        <div class="highlight-box">
+          <p style="margin: 0; font-weight: 600;">【結論：高機能ステーションの独占市場】</p>
+          <p style="margin: 8px 0 0;">この47万人の受け皿となれるのは、24時間対応、重度者・ターミナルケア（看取り）、精神科対応を完遂できる<strong>「高機能・多機能型ステーション」</strong>のみ。これはビジネスチャンスを超えた、国家レベルの社会的要請である。</p>
+        </div>
+
+        <hr class="section-separator">
+
+        <h2>0.2 採用氷河期の生存戦略</h2>
+        <p class="small" style="margin-bottom: 8px;">労働力「半減」時代におけるユニットエコノミクスの転換</p>
+
+        <p>「求人を出せば人が来る」時代は完全に終焉した。2040年には生産年齢人口（15〜64歳）が激減し、「1.5人の現役世代で1人の高齢者を支える」騎馬戦型の社会構造となる。</p>
+
+        <div class="callout callout--warning">
+          <div class="callout-title">⚠ 従来モデルの崩壊</div>
+          <ul class="arrow-list" style="margin-top: 8px;">
+            <li><strong>採用コストの高騰：</strong>人材紹介手数料や広告費は年々上昇</li>
+            <li><strong>賃金上昇圧力：</strong>低い生産性のままでは人件費率を維持できず赤字転落</li>
+          </ul>
+        </div>
+
+        <div class="card card--highlight" style="margin-top: 12px;">
+          <div class="card__title">💡 唯一の解：高生産性モデルへのシフト</div>
+          <div class="card__content">
+            <p style="margin: 0;">本書で提唱する<strong>「1人あたり月間88時間訪問」</strong>は、高騰する人件費を賄い、十分な内部留保を確保し、かつスタッフに高水準の給与を還元して離職を防ぐための<strong>「生存のための最低ライン」</strong>である。</p>
+          </div>
+        </div>
+
+        <div class="quote-box" style="margin-top: 16px;">
+          <p style="margin: 0;">「人を増やして売上を作る」のではなく、<br><strong>「生産性を高めてから人を増やす」</strong><br>この順序の逆転こそが、これからの経営のスタンダードとなる。</p>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>序章：市場機会と参入根拠</div>
+        <div>03</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 4: 第1章 - ユニットエコノミクス (1)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第1章</div>
+      </div>
+
+      <div class="page-inner">
+        <div class="chapter-heading">
+          <div class="chapter-heading__eyebrow">CHAPTER 01</div>
+          <div class="chapter-heading__title">ユニットエコノミクスの完全解剖</div>
+          <p class="chapter-heading__goal">経営の生命線である「10名ユニット」の収益構造と損益分岐点の制御</p>
+        </div>
+
+        <h2>1.1 財務モデルの分岐点（都市 vs 地方）</h2>
+
+        <p>訪問看護経営に「全国一律の正解」は存在しない。地域区分（1〜7級地、その他）および競合環境により、目指すべき収益構造は明確に分岐する。</p>
+
+        <p class="small" style="margin-bottom: 8px;">【比較：10名ユニット（看護6:リハ3:管理1）の標準モデル】</p>
+
+        <table style="font-size: 11px;">
+          <thead>
+            <tr>
+              <th style="width: 22%;">項目</th>
+              <th style="width: 39%;">【A：都市モデル】</th>
+              <th style="width: 39%;">【B：地方モデル】</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>平均訪問単価</strong></td>
+              <td>約 <strong>9,800円</strong></td>
+              <td>約 <strong>8,200円</strong></td>
+            </tr>
+            <tr>
+              <td><strong>1人あたり売上</strong></td>
+              <td>約 86万円 / 月</td>
+              <td>約 72万円 / 月</td>
+            </tr>
+            <tr>
+              <td><strong>10名時の月商</strong></td>
+              <td><strong>約 850万円</strong><br><span class="small">年商換算：1億円強</span></td>
+              <td><strong>約 690万円</strong><br><span class="small">年商換算：8,300万円</span></td>
+            </tr>
+            <tr>
+              <td><strong>人件費率目標</strong></td>
+              <td>60% (510万)</td>
+              <td>65% (448万)</td>
+            </tr>
+            <tr>
+              <td><strong>損益分岐点(BEP)</strong></td>
+              <td>訪問 65時間 / 月</td>
+              <td>訪問 75時間 / 月</td>
+            </tr>
+            <tr>
+              <td><strong>勝ち筋</strong></td>
+              <td><span class="label label--info">医療依存度特化</span></td>
+              <td><span class="label label--success">ドミナント・移動効率</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="two-column" style="margin-top: 12px;">
+          <div class="callout callout--warning" style="margin: 0;">
+            <div class="callout-title">⚠ 都市モデル（A）の罠</div>
+            <p style="margin: 0;">売上は高いが、家賃と採用費が利益を圧迫。<strong>「リファラル採用」</strong>が進まないと利益は残らない。</p>
+          </div>
+          <div class="callout callout--alert" style="margin: 0;">
+            <div class="callout-title">⛔ 地方モデル（B）の罠</div>
+            <p style="margin: 0;">単価が安いため、移動時間が長引くと致命傷。<strong>「車30分圏内」</strong>のドミナントを死守せよ。</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第1章：ユニットエコノミクスの完全解剖</div>
+        <div>04</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 5: 第1章 - ユニットエコノミクス (2)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第1章</div>
+      </div>
+
+      <div class="page-inner">
+        <h2>1.2 事務部門の導入タイミング</h2>
+        <p class="small" style="margin-bottom: 8px;">Cost Control</p>
+
+        <p>「事務作業が大変だから」という感情的な理由で事務員を雇用することは、小規模ステーションが陥る典型的な倒産パターンである。</p>
+
+        <div class="callout callout--alert">
+          <div class="callout-title">⛔ 鉄則：導入の絶対基準</div>
+          <div class="two-column" style="margin-top: 8px;">
+            <div class="metric-box" style="margin: 0;">
+              <div class="metric-box__label">基準値</div>
+              <div class="metric-box__value">利用者100名</div>
+              <div class="metric-box__note">月商約500〜600万円到達まで事務員は不要</div>
+            </div>
+            <div class="metric-box" style="margin: 0;">
+              <div class="metric-box__label">適正配置</div>
+              <div class="metric-box__value">10名に0.5〜1名</div>
+              <div class="metric-box__note">スタッフ10名に対する事務員の黄金比率</div>
+            </div>
+          </div>
+        </div>
+
+        <h3>なぜ100名まで管理者がやるべきなのか？</h3>
+
+        <ol class="steps">
+          <li><strong>キャッシュフローの防衛</strong><br>創業期〜拡大期の人件費率は高く、事務員1名（月20〜25万）の固定費追加は利益をすべて吹き飛ばすインパクトがある。</li>
+          <li><strong>ブラックボックス化の防止</strong><br>最初から事務員に丸投げすると、「レセプトの仕組み」や「加算の取りこぼし」を理解できないまま組織が大きくなる。</li>
+        </ol>
+
+        <div class="callout callout--info">
+          <div class="callout-title">💡 TIPS：事務工数の削減戦術</div>
+          <p style="margin: 0;">事務員を入れる前に、以下のDXで工数を圧縮せよ。</p>
+          <ul class="arrow-list" style="margin-top: 8px;">
+            <li><strong>請求ソフト：</strong>クラウド型を採用し、訪問記録と請求データを連動（転記作業の撲滅）</li>
+            <li><strong>電話対応：</strong>一次受けを自動音声や代行サービスに、チャットツールを活用し電話の総量を減らす</li>
+          </ul>
+        </div>
+
+        <hr class="section-separator">
+
+        <h2>1.3 ユニットの拡張と限界</h2>
+        <p class="small" style="margin-bottom: 8px;">Scaling Limit</p>
+
+        <p>「10名＝1億円」のユニットが完成した後、どう拡大すべきか。</p>
+
+        <div class="two-column">
+          <div class="card">
+            <div class="card__title">📏 1ユニットの限界値</div>
+            <div class="card__content">
+              <p style="margin: 0;">スタッフ <strong>12〜15名</strong></p>
+              <p style="margin: 4px 0 0;" class="small">これを超えると管理者1名でのマネジメントが物理的に不可能になり、離職率が急増する。</p>
+            </div>
+          </div>
+          <div class="card card--highlight">
+            <div class="card__title">🔄 細胞分裂（Scrap & Build）</div>
+            <div class="card__content">
+              <p style="margin: 0;">12名を超えた段階で、次の管理者を任命し「第2チーム」としてユニットを分割する。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 12px;">
+          <p style="margin: 0; text-align: center;"><strong>「10名の精鋭部隊を複製（コピー）していく」</strong><br>これが年商5億への最短かつ最も安全なルートである。</p>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第1章：ユニットエコノミクスの完全解剖</div>
+        <div>05</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 6: 第2章 - エリア・ドミナント戦略 (1)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第2章</div>
+      </div>
+
+      <div class="page-inner">
+        <div class="chapter-heading">
+          <div class="chapter-heading__eyebrow">CHAPTER 02</div>
+          <div class="chapter-heading__title">エリア・ドミナント戦略</div>
+          <p class="chapter-heading__goal">「感覚」を排除し、「地図」と「数字」で勝敗を決めるロジック</p>
+        </div>
+
+        <h2>2.1 勝てるエリアの選定指標</h2>
+        <p class="small" style="margin-bottom: 8px;">Market Selection</p>
+
+        <p>立地選定は「不動産探し」ではない。<strong>「市場の歪み（需給ギャップ）」</strong>を見つける作業である。「家賃が安い」「自宅から近い」という理由での開業は、自殺行為に等しい。</p>
+
+        <h3>【Step 1：需給ギャップの定量化】</h3>
+        <div class="callout callout--info">
+          <div class="callout-title">📐 計算式</div>
+          <ul class="arrow-list" style="margin-top: 8px;">
+            <li><strong>エリア総需要：</strong>（要介護認定者数）×（訪問看護利用率：約15%前後）</li>
+            <li><strong>エリア総供給：</strong>（既存ステーション数）×（1ステーション平均利用者数：約40〜50名）</li>
+            <li><strong>参入余地：</strong>①－②＝<strong>「受け皿のない難民数」</strong></li>
+          </ul>
+          <p class="small" style="margin: 8px 0 0;">※参照資料：各自治体公表の「介護保険事業計画（第9期など）」</p>
+        </div>
+
+        <h3>【Step 2：競合の「機能不全」を突く】</h3>
+        <p>「ステーション数が多い＝激戦区」とは限らない。「機能していない（弱い）ステーション」が多ければ、そこは実質的な空白地帯である。</p>
+
+        <div class="three-column" style="margin-top: 8px;">
+          <div class="card">
+            <div class="card__title">🧠 精神科対応</div>
+            <div class="card__content">不可のステーションが多い場合、精神科特化で参入すれば即座にシェアを奪える</div>
+          </div>
+          <div class="card">
+            <div class="card__title">🌙 24時間対応</div>
+            <div class="card__content">「加算なし」の事業所は重度者を受け入れられない。ここが弱点となる</div>
+          </div>
+          <div class="card">
+            <div class="card__title">⭐ 口コミ</div>
+            <div class="card__content">Googleマップの悪評は最大の参入チャンス</div>
+          </div>
+        </div>
+
+        <h3>【Step 3：銀行を説得する「融資のロジック」】</h3>
+        <div class="two-column" style="margin-top: 8px;">
+          <div class="callout callout--alert" style="margin: 0;">
+            <div class="callout-title">✕ 弱い説明</div>
+            <p style="margin: 0;">「頑張って営業します」<br>「良い看護を提供します」</p>
+          </div>
+          <div class="callout callout--success" style="margin: 0;">
+            <div class="callout-title">○ 強い説明</div>
+            <p style="margin: 0;">「このエリアには要介護者が○○人いますが、24時間対応できるステーションが○箇所しかなく、○○人がサービスを受けられずに溢れています」</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第2章：エリア・ドミナント戦略</div>
+        <div>06</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 7: 第2章 - エリア・ドミナント戦略 (2)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第2章</div>
+      </div>
+
+      <div class="page-inner">
+        <h2>2.2 20分圏内のドミナント法則</h2>
+        <p class="small" style="margin-bottom: 8px;">The 20-Minute Rule</p>
+
+        <p>なぜ「飛び地」は失敗するのか。それは移動コストだけでなく、<strong>「組織の免疫力」</strong>が低下するからである。</p>
+
+        <div class="highlight-box">
+          <p style="margin: 0; text-align: center;"><strong>「自転車20分・車30分」</strong>は単なる目安ではない。<br>経営効率を1.5倍にするための<strong>「物理的境界線」</strong>である。</p>
+        </div>
+
+        <h3>【法則1：移動コストと非生産時間の圧縮】</h3>
+        <div class="callout">
+          <div class="callout-title">💡 移動時間のコスト計算</div>
+          <p style="margin: 0;">移動時間が1件あたり10分増えると、1日（6件訪問）で60分のロス。<br>月間で約<strong>20時間の売上機会損失（約17万円/人）</strong>となる。</p>
+        </div>
+
+        <h3>【法則2：リスク分散と「組織の免疫力」】</h3>
+        <div class="two-column">
+          <div class="card">
+            <div class="card__title">🏥 緊急時の相互扶助（BCP）</div>
+            <div class="card__content">ドミナント（近隣）であれば、「A店の欠員をB店のスタッフがカバーする」ことが可能。これが組織の耐久力（免疫）となる。</div>
+          </div>
+          <div class="card">
+            <div class="card__title">📚 採用と教育のシナジー</div>
+            <div class="card__content">A店で採用したスタッフを、育成に定評のあるB店で研修させる、といった柔軟な運用が可能になる。</div>
+          </div>
+        </div>
+
+        <h3>【法則3：認知の面制圧（Marketing Density）】</h3>
+        <div class="callout callout--success">
+          <div class="callout-title">✓ 単純接触効果（ザイアンス効果）</div>
+          <p style="margin: 0;">同じエリアに自社の看板を背負った車や自転車が5台、10台と走り回るだけで、地域の住民やケアマネは<strong>「最近、あのステーションばかり見るな」</strong>と錯覚する。これが「大手感」「安心感」を醸成し、<strong>「指名買い」</strong>を生む土壌となる。</p>
+        </div>
+
+        <div class="metric-box" style="background: var(--color-success-soft); margin-top: 12px;">
+          <div class="metric-box__label">結論</div>
+          <div class="metric-box__value" style="color: var(--color-success);">商圏を狭める＝見えない利益を拾う最強のコストカット</div>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第2章：エリア・ドミナント戦略</div>
+        <div>07</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 8: 第3章 - 組織文化と規律 (1)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第3章</div>
+      </div>
+
+      <div class="page-inner">
+        <div class="chapter-heading">
+          <div class="chapter-heading__eyebrow">CHAPTER 03</div>
+          <div class="chapter-heading__title">組織文化と規律</div>
+          <p class="chapter-heading__goal">「10名・1億」を維持するための、心理的安全性と排除の論理</p>
+        </div>
+
+        <h2>3.1 一貫性の原理と「毒抜き」</h2>
+        <p class="small" style="margin-bottom: 8px;">Consistency & Detox</p>
+
+        <p>組織文化とは、壁に貼られた理念ではない。<strong>「誰を採用し、誰を解雇（または降格）したか」</strong>という事実の積み重ねである。</p>
+
+        <div class="callout callout--alert">
+          <div class="callout-title">⛔ 鉄則：トキシック・ハイパフォーマーの排除</div>
+          <p style="margin: 0;">最も組織を腐らせるのは、「仕事はできないが性格が良い人」ではない。<br><strong>「仕事はできるが、文化を破壊する人（Toxic High Performer）」</strong>である。</p>
+        </div>
+
+        <h4>症状チェックリスト</h4>
+        <ul class="checklist">
+          <li>「私が稼いでいるんだから」と、提出物の期限を守らない</li>
+          <li>陰で管理者や他スタッフの批判をする（他責思考）</li>
+          <li>自分のやり方を固持し、新しいルールに従わない</li>
+        </ul>
+
+        <h4>処方箋</h4>
+        <ul class="arrow-list">
+          <li><strong>特例の禁止：</strong>「Aさん（エース）だから仕方ない」と黙認した瞬間、他の9人のモチベーションは死ぬ</li>
+          <li><strong>外科手術：</strong>何度フィードバックしても改善しない場合、売上が一時的に落ちても「排除（退職勧奨）」を選択する</li>
+        </ul>
+
+        <hr class="section-separator">
+
+        <h2>3.2 心理的安全性と Just Culture</h2>
+        <p class="small" style="margin-bottom: 8px;">Fairness</p>
+
+        <p>「No Blame（責めない）」は、「何をしても許される」という意味ではない。医療安全における<strong>「Just Culture（公正な文化）」</strong>のアルゴリズムを採用し、「許すべきミス」と「処罰すべき違反」を明確に区別する。</p>
+
+        <div class="highlight-box">
+          <p style="margin: 0; font-weight: 600;">【責任追及の判断アルゴリズム（Substitution Test）】</p>
+          <p style="margin: 8px 0 0;"><strong>「同じスキルを持つ別のスタッフが、同じ状況に置かれたら、同じミスをしたか？」</strong></p>
+        </div>
+
+        <div class="two-column" style="margin-top: 12px;">
+          <div class="callout callout--success" style="margin: 0;">
+            <div class="callout-title">YES（誰でもやりそう）</div>
+            <p style="margin: 0;">原因は「システム」にある。<br>→ 仕組みを改善する。<strong>個人は絶対に責めない。</strong></p>
+          </div>
+          <div class="callout callout--alert" style="margin: 0;">
+            <div class="callout-title">NO（普通はやらない）</div>
+            <p style="margin: 0;">意図的な手抜き、ルール無視など。<br>→ <strong>コーチングまたは処罰の対象</strong>とする。</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第3章：組織文化と規律</div>
+        <div>08</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 9: 第3章 - 組織文化と規律 (2)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第3章</div>
+      </div>
+
+      <div class="page-inner">
+        <h2>3.3 フィードバックの技術</h2>
+        <p class="small" style="margin-bottom: 8px;">Feedback Protocol</p>
+
+        <p>フィードバックの目的は「人格否定」ではなく<strong>「行動変容」</strong>である。情報の非対称性を防ぎ、納得感を生むための標準プロトコルを定める。</p>
+
+        <h3>【ルール1：メディア・リッチネス理論の応用】</h3>
+        <p>コミュニケーションツールは、情報の緊急度と複雑さに応じて使い分ける。</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ツール</th>
+              <th>適した用途</th>
+              <th>注意点</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Slack / LINE</strong><br><span class="small">（テキスト）</span></td>
+              <td><span class="label label--success">事実の共有、称賛</span></td>
+              <td>ネガティブな指摘を文字で送ると、受け手は「怒っている冷たい声」で脳内再生してしまう</td>
+            </tr>
+            <tr>
+              <td><strong>対面 / 電話</strong></td>
+              <td><span class="label label--warning">指摘、改善要求</span></td>
+              <td>表情、声色、温度感をセットにしないと真意は伝わらない</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>【ルール2：SBI型フィードバック】</h3>
+        <p>「ちゃんとして」「もっと意識して」という抽象的な指摘は禁止。以下の型で伝える。</p>
+
+        <ol class="steps">
+          <li><strong>Situation（状況）</strong><br>「昨日の訪問時のことだけど」</li>
+          <li><strong>Behavior（行動）</strong><br>「利用者様へのタメ口が2回あったね」</li>
+          <li><strong>Impact（影響）</strong><br>「あれだと、ご家族が『敬意がない』と感じて信頼を失うリスクがあるよ」</li>
+        </ol>
+
+        <h3>【ルール3：賞味期限は24時間】</h3>
+        <div class="callout callout--warning">
+          <div class="callout-title">⚠ 鉄は熱いうちに打て</div>
+          <p style="margin: 0;">1週間前のことを「あの時さぁ…」と蒸し返さない。記憶が鮮明なうちに、その場で修正するからこそ「業務上の指摘」として受け取れる。時間が経つと「根に持つタイプ」と思われ、信頼関係が崩れる。</p>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第3章：組織文化と規律</div>
+        <div>09</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 10: 第4章 - 財務ポートフォリオ戦略 (1)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第4章</div>
+      </div>
+
+      <div class="page-inner">
+        <div class="chapter-heading">
+          <div class="chapter-heading__eyebrow">CHAPTER 04</div>
+          <div class="chapter-heading__title">財務ポートフォリオ戦略</div>
+          <p class="chapter-heading__goal">「高収益」と「安定」を両立させる、医療・介護比率の動的コントロール</p>
+        </div>
+
+        <h2>4.1 医療保険と介護保険の「経済学的特性」</h2>
+
+        <p>経営者は、目の前の患者をただ受け入れるのではなく、自社の財務状況に合わせて<strong>「患者ミックス（Portfolio）」</strong>を意図的に設計しなければならない。</p>
+
+        <table style="font-size: 11px;">
+          <thead>
+            <tr>
+              <th style="width: 20%;">項目</th>
+              <th style="width: 40%;">【A：医療保険】</th>
+              <th style="width: 40%;">【B：介護保険】</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>金融的特性</strong></td>
+              <td><span class="label label--alert">株式型</span><br>ハイリスク・ハイリターン</td>
+              <td><span class="label label--info">債券型</span><br>ローリスク・ローリターン</td>
+            </tr>
+            <tr>
+              <td><strong>収益性</strong></td>
+              <td>極めて高い<br><span class="small">24時間・重度・看取り加算等のフル取得</span></td>
+              <td>標準的<br><span class="small">基本単位＋体制加算程度</span></td>
+            </tr>
+            <tr>
+              <td><strong>ボラティリティ</strong></td>
+              <td>激しい<br><span class="small">新規→死亡退院のサイクルが1〜3ヶ月</span></td>
+              <td>安定<br><span class="small">年単位での利用継続が見込める</span></td>
+            </tr>
+            <tr>
+              <td><strong>人事リスク</strong></td>
+              <td><span class="label label--warning">摩耗（Burnout）</span><br><span class="small">緊急コール・死への対峙で精神的負荷大</span></td>
+              <td><span class="label">停滞（Stagnation）</span><br><span class="small">ルーティン化、成長実感が薄れる</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>4.2 フェーズ別・黄金比率の動的管理</h2>
+
+        <p>「正解の比率」は固定ではない。会社の成長フェーズ（資金需要）に応じて、アクセルとブレーキを踏み変える。</p>
+
+        <div class="two-column" style="margin-top: 12px;">
+          <div class="card card--highlight">
+            <div class="card__title">🚀 Phase 1：拡大期（Attack）</div>
+            <div class="card__content">
+              <div class="metric-box" style="margin: 8px 0;">
+                <div class="metric-box__label">推奨比率</div>
+                <div class="metric-box__value">医療 60% : 介護 40%</div>
+              </div>
+              <p style="margin: 0;">拡大期は「採用費」「出店費」でキャッシュが出ていく。高単価な医療保険を積極的に取りに行く。</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__title">🛡️ Phase 2：安定期（Defense）</div>
+            <div class="card__content">
+              <div class="metric-box" style="margin: 8px 0;">
+                <div class="metric-box__label">推奨比率</div>
+                <div class="metric-box__value">医療 40% : 介護 60%</div>
+              </div>
+              <p style="margin: 0;">LTVの高い介護保険の比率を高め、経営の盤石化を図る。スタッフの疲弊を防ぐ。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第4章：財務ポートフォリオ戦略</div>
+        <div>10</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 11: 第4章 - 財務ポートフォリオ戦略 (2)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第4章</div>
+      </div>
+
+      <div class="page-inner">
+        <h2>4.3 チャネル・コントロール</h2>
+        <p class="small" style="margin-bottom: 8px;">Channel Strategy</p>
+
+        <p>「比率を変えたい」と思っても、来る依頼を選り好みしていては評判を落とす。比率をコントロールする唯一の方法は、<strong>「営業先（蛇口）」を変える</strong>ことである。</p>
+
+        <div class="two-column">
+          <div class="callout callout--info" style="margin: 0;">
+            <div class="callout-title">📈「医療保険」を増やしたい時</div>
+            <p style="margin: 4px 0 0;"><strong>ターゲット：</strong>急性期病院の「地域連携室」、退院調整看護師</p>
+            <p style="margin: 4px 0 0;"><strong>訴求点：</strong>「土日祝・夜間の緊急対応力」「医療処置の対応実績」</p>
+          </div>
+          <div class="callout callout--success" style="margin: 0;">
+            <div class="callout-title">📊「介護保険」を増やしたい時</div>
+            <p style="margin: 4px 0 0;"><strong>ターゲット：</strong>地域の「居宅介護支援事業所（ケアマネジャー）」</p>
+            <p style="margin: 4px 0 0;"><strong>訴求点：</strong>「生活を支える視点」「リハビリによるADL維持」</p>
+          </div>
+        </div>
+
+        <hr class="section-separator">
+
+        <h2>4.4 組織文化による「やりがい」のポートフォリオ</h2>
+
+        <p>財務だけでなく、スタッフの「感情」もポートフォリオで管理する。</p>
+
+        <div class="two-column">
+          <div class="callout callout--alert" style="margin: 0;">
+            <div class="callout-title">⚠ 医療偏重のリスク</div>
+            <p style="margin: 0;">「看取りばかりで辛い」「電話が鳴り止まない」<br>→ 離職のトリガー</p>
+          </div>
+          <div class="callout callout--warning" style="margin: 0;">
+            <div class="callout-title">⚠ 介護偏重のリスク</div>
+            <p style="margin: 0;">「ただの御用聞きになっている」「スキルが落ちる」<br>→ 優秀層の離脱</p>
+          </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 12px;">
+          <p style="margin: 0; font-weight: 600;">【解決策：ハイブリッド・アサイン】</p>
+          <p style="margin: 8px 0 0;">一人のスタッフに「医療（重度）」と「介護（軽度）」を意図的に混ぜて担当させる。</p>
+          <ul class="arrow-list" style="margin-top: 8px;">
+            <li>「緊張感のある医療処置」で<strong>プロとしての誇り</strong>を満たす</li>
+            <li>「馴染みの利用者との穏やかな関わり」で精神的な安らぎを得る</li>
+          </ul>
+          <p class="small" style="margin: 8px 0 0;">このバランスをシフト作成者が意識することで、離職率は劇的に低下する。</p>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第4章：財務ポートフォリオ戦略</div>
+        <div>11</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 12: 第5章 - 0→1マーケティング (1)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第5章</div>
+      </div>
+
+      <div class="page-inner">
+        <div class="chapter-heading">
+          <div class="chapter-heading__eyebrow">CHAPTER 05</div>
+          <div class="chapter-heading__title">0→1マーケティング</div>
+          <p class="chapter-heading__goal">「認知心理学」と「リスク・リバーサル」を用いた、科学的初期集客</p>
+        </div>
+
+        <h2>5.1 認知のジャック</h2>
+        <p class="small" style="margin-bottom: 8px;">Cognitive Dominance</p>
+
+        <p>「営業」とは、頭を下げることではない。地域における<strong>「マインドシェア（想起率）」</strong>を奪う陣取り合戦である。</p>
+
+        <div class="callout callout--info">
+          <div class="callout-title">📐 理論：ザイアンス効果（単純接触効果）の最大化</div>
+          <p style="margin: 0;">人は、会う回数が多い相手ほど好意と信頼を抱く。「長時間の1回」より「短時間の5回」が勝る。</p>
+          <div class="metric-box" style="margin: 8px 0 0; background: white;">
+            <div class="metric-box__label">KPI</div>
+            <div class="metric-box__value" style="font-size: 14px;">ターゲット事業所に月2回（2週に1回）以上の接触</div>
+          </div>
+        </div>
+
+        <h3>【武器：ニュースレター戦略】</h3>
+        <p>「手ぶら」で行くから、営業は辛くなる。訪問には「正当な口実（理由）」が必要だ。</p>
+
+        <div class="three-column">
+          <div class="card">
+            <div class="card__title">📋 空き枠情報</div>
+            <div class="card__content">ケアマネが最も欲しい「今すぐ受け入れられるか」という情報</div>
+          </div>
+          <div class="card">
+            <div class="card__title">👤 スタッフ紹介</div>
+            <div class="card__content">「今月入った○○さんは元ICUです」など人間味を売る</div>
+          </div>
+          <div class="card">
+            <div class="card__title">📝 解決レポート</div>
+            <div class="card__content">困難事例をどう解決したかの実績（ケーススタディ）</div>
+          </div>
+        </div>
+
+        <hr class="section-separator">
+
+        <h2>5.2 「静寂の谷」の歩き方</h2>
+        <p class="small" style="margin-bottom: 8px;">電話線を確認した日々の記録</p>
+
+        <div class="quote-box">
+          <p style="margin: 0;">開業初月。あまりに電話が鳴らないため、私は精神的な錯覚に陥った。<br><strong>「もしかして、電話線が抜けているのではないか？」</strong><br>震える手で自分の携帯から事務所へ電話をかけ、「プルルル」という音が鳴るのを確認して、逆に絶望する。</p>
+        </div>
+
+        <div class="callout callout--success">
+          <div class="callout-title">✓ 処方箋：行動療法</div>
+          <p style="margin: 0;">不安を消す唯一の方法は「行動」である。「1日○件回るまでは帰らない」と決め、物理的に身体を動かす。この泥臭い一歩が、確率論的に必ず「最初の1件」を引き寄せる。</p>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第5章：0→1マーケティング</div>
+        <div>12</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 13: 第5章 - 0→1マーケティング (2)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第5章</div>
+      </div>
+
+      <div class="page-inner">
+        <h2>5.3 殺し文句とリスク・リバーサル</h2>
+        <p class="small" style="margin-bottom: 8px;">Risk Reversal</p>
+
+        <p>実績のない新参者が選ばれない理由は、「能力不足」ではない。<strong>「恐怖」</strong>である。ケアマネジャーにとって、見知らぬステーションを紹介し、そこでトラブルが起きることは、「自分の顔（信用）に泥を塗る」ことを意味する。</p>
+
+        <div class="highlight-box">
+          <p style="margin: 0; font-weight: 600; font-size: 14px;">【Killer Phrase（殺し文句）】</p>
+          <p style="margin: 12px 0; font-size: 15px; text-align: center; font-weight: 600;">
+            「一回使ってみてください。<br>
+            それでダメなら、二度と使わなくていいです。<br>
+            それぐらい、ケアと連携には自信があります。」
+          </p>
+        </div>
+
+        <h4>論理構造の解説</h4>
+        <ol class="steps">
+          <li><strong>「一回使ってみて」</strong><br>ハードルを「一生の付き合い」から「一度のテスト」へ下げる（パピー・ドッグ・クローズ）</li>
+          <li><strong>「ダメなら二度と使わなくていい」</strong><br>相手が抱える「失敗したらどうしよう」というリスクを、すべてこちらが引き受ける宣言</li>
+          <li><strong>「自信があります」</strong><br>根拠なき自信ではない。覚悟の表明が、相手の背中を押す</li>
+        </ol>
+
+        <hr class="section-separator">
+
+        <h2>5.4 「ラストリゾート」戦略</h2>
+        <p class="small" style="margin-bottom: 8px;">競合が嫌がる仕事こそが、黄金の入り口</p>
+
+        <p>実績ゼロのステーションに、最初から「楽な案件」は回ってこない。回ってくるのは、競合他社が断った<strong>「困難事例」</strong>である。</p>
+
+        <div class="callout callout--success">
+          <div class="callout-title">✓ 鉄則：断らないことが最強の営業</div>
+          <ul class="arrow-list" style="margin-top: 8px;">
+            <li>最初の1件は、どんなに条件が悪くても<strong>「喜んで！」</strong>と受ける</li>
+            <li>「あそこは困った時に助けてくれる」という<strong>「最後の砦（ラストリゾート）」</strong>のポジションを確立する</li>
+            <li>困難事例で信頼を勝ち取れば、そのケアマネは次に必ず「楽で良い案件」も回してくれる<br><span class="small">→ これが「返報性の原理」</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第5章：0→1マーケティング</div>
+        <div>13</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 14: 第6章 - スケーリングと多角化の罠 (1)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第6章</div>
+      </div>
+
+      <div class="page-inner">
+        <div class="chapter-heading">
+          <div class="chapter-heading__eyebrow">CHAPTER 06</div>
+          <div class="chapter-heading__title">スケーリングと多角化の罠</div>
+          <p class="chapter-heading__goal">「1店舗の成功」を過信した経営者が陥る、構造的倒産のメカニズム</p>
+        </div>
+
+        <h2>6.1 2店舗目の出店基準</h2>
+        <p class="small" style="margin-bottom: 8px;">Go/No-Go Decision</p>
+
+        <p>多くの経営者が「なんとなく人が増えたから」「良い物件があったから」という情緒的な理由で2店舗目を出店し、自滅する。以下の<strong>「3つの定量的トリガー」</strong>がすべて引かれた瞬間のみ、Goサインを出せ。</p>
+
+        <div class="three-column">
+          <div class="metric-box" style="background: var(--color-success-soft);">
+            <div class="metric-box__label">トリガー1：財務的余力</div>
+            <div class="metric-box__value" style="color: var(--color-success); font-size: 14px;">月間営業利益 50万円以上</div>
+            <div class="metric-box__note">2店舗目の赤字を補填できる余力</div>
+          </div>
+          <div class="metric-box" style="background: var(--color-info-soft);">
+            <div class="metric-box__label">トリガー2：組織の冗長性</div>
+            <div class="metric-box__value" style="color: var(--color-info); font-size: 14px;">スタッフ数 8名以上</div>
+            <div class="metric-box__note">ヘルプを出しても本体が揺らがない</div>
+          </div>
+          <div class="metric-box" style="background: var(--color-warning-soft);">
+            <div class="metric-box__label">トリガー3：権限移譲</div>
+            <div class="metric-box__value" style="color: #9a6700; font-size: 14px;">No.2の機能</div>
+            <div class="metric-box__note">管理者不在でも1週間回るか？</div>
+          </div>
+        </div>
+
+        <hr class="section-separator">
+
+        <h2>6.2 2店舗目の悪夢</h2>
+        <p class="small" style="margin-bottom: 8px;">Cash Burn Analysis ～融資2,000万円が消えるメカニズム～</p>
+
+        <div class="callout callout--alert">
+          <div class="callout-title">📊 2店舗目立ち上げのPL実態（初期6ヶ月）</div>
+          <table style="margin-top: 8px; font-size: 11px;">
+            <tr>
+              <td><strong>売上（入金）</strong></td>
+              <td>初月請求額はわずか<strong>4〜5万円</strong>。現金が入るのはさらに2ヶ月後</td>
+            </tr>
+            <tr>
+              <td><strong>コスト（出金）</strong></td>
+              <td>先行採用費（人件費）月150〜200万 + 固定費 月50万</td>
+            </tr>
+            <tr>
+              <td><strong>バーンレート</strong></td>
+              <td>毎月<strong>約200〜250万円</strong>の現金が消えていく</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="highlight-box">
+          <p style="margin: 0; font-weight: 600;">【結論：半年分の運転資金を持て】</p>
+          <p style="margin: 8px 0 0;">「希望的観測」で事業計画を作るな。<strong>「最悪のケース」でも半年耐えられるキャッシュを用意せよ。</strong></p>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第6章：スケーリングと多角化の罠</div>
+        <div>14</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 15: 第6章 - スケーリングと多角化の罠 (2)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第6章</div>
+      </div>
+
+      <div class="page-inner">
+        <h2>6.3 多角化の失敗と構造的欠陥</h2>
+        <p class="small" style="margin-bottom: 8px;">Diversification Trap ～なぜ「福祉用具・居宅」は失敗するのか～</p>
+
+        <p>「訪問看護利用者には福祉用具も必要だ」「ケアマネがいれば囲い込める」このシナジー理論は、机上の空論である。その原因は<strong>「時間単価の構造的格差」</strong>にある。</p>
+
+        <table style="font-size: 11px;">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>訪問看護</th>
+              <th>福祉用具・居宅介護支援</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>ビジネスモデル</strong></td>
+              <td><span class="label label--success">労働集約型・高単価</span></td>
+              <td><span class="label label--warning">労働集約型・低単価</span></td>
+            </tr>
+            <tr>
+              <td><strong>1時間あたりの売上</strong></td>
+              <td>約10,000円</td>
+              <td>訪問看護の数分の一〜半分以下</td>
+            </tr>
+            <tr>
+              <td><strong>罠（Trap）</strong></td>
+              <td>-</td>
+              <td>利益が出ない割に管理コストだけが増大</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout callout--warning">
+          <div class="callout-title">⚠ 教訓：ランチェスター戦略の適用</div>
+          <p style="margin: 0;">中小企業がリソースを分散させることは死を意味する。<strong>「訪問看護一本足打法」</strong>で地域シェアNo.1を取り切ることが、最も利益率が高く、生存確率が高い戦略である。</p>
+        </div>
+
+        <hr class="section-separator">
+
+        <h2>6.4 遠隔地マネジメントの限界</h2>
+        <p class="small" style="margin-bottom: 8px;">The Distance Limit ～「目の届かない場所」で組織は腐る～</p>
+
+        <p>スケーリングにおける最大のリスクは、財務ではなく<strong>「文化の希釈化」</strong>である。</p>
+
+        <div class="two-column">
+          <div class="callout callout--alert" style="margin: 0;">
+            <div class="callout-title">⛔ 問題</div>
+            <ul class="arrow-list" style="margin-top: 8px;">
+              <li><strong>社長の背中が見えない：</strong>離れた2店舗目では、社長の熱量は届かない</li>
+              <li><strong>伝言ゲームの悲劇：</strong>「利用者を大切に」が「クレームを出さないように」に摩耗</li>
+            </ul>
+          </div>
+          <div class="callout callout--success" style="margin: 0;">
+            <div class="callout-title">✓ 対策：定量的モニタリング</div>
+            <ul class="arrow-list" style="margin-top: 8px;">
+              <li>週次のKPI報告（新規数、稼働率、残業時間）</li>
+              <li>異常値が出たら即座に現地へ飛び、介入する</li>
+              <li>「性善説」ではなく<strong>「性弱説」</strong>に基づく監視の仕組み</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第6章：スケーリングと多角化の罠</div>
+        <div>15</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 16: 第7章 - 品質管理とリスクヘッジ (1)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第7章</div>
+      </div>
+
+      <div class="page-inner">
+        <div class="chapter-heading">
+          <div class="chapter-heading__eyebrow">CHAPTER 07</div>
+          <div class="chapter-heading__title">品質管理とリスクヘッジ</div>
+          <p class="chapter-heading__goal">組織崩壊と返還請求を防ぐ、鉄壁の「守り」のプロトコル</p>
+        </div>
+
+        <h2>7.1 クライシス・マネジメント</h2>
+        <p class="small" style="margin-bottom: 8px;">Crisis Protocol ～スタッフが「一生ついていきたい」と思う、究極の危機対応～</p>
+
+        <p>重大インシデント発生時、経営者の最優先事項は「保身」ではない。<strong>「現場スタッフの精神的防衛」</strong>である。</p>
+
+        <h3>【Scenario A：独居利用者の死亡発見時】</h3>
+        <ol class="steps">
+          <li><strong>即時急行（Physical Presence）</strong><br>「電話で指示」は厳禁。何をおいても現場へ走る。<br><span class="small">殺し文句：「今すぐ行くから、あなたは何も悪くない。そのまま待っていて。」</span></li>
+          <li><strong>警察対応の肩代わり（Shielding）</strong><br>管理者が全て矢面に立ち、スタッフを背後に隠す。家族への連絡・説明も全て管理者が引き取る。</li>
+          <li><strong>No Blame & Grief Care（事後ケア）</strong><br>「なぜ気づかなかった？」という追求は一切しない。<br><span class="small">声かけ：「発見してくれてありがとう。あなたが第一発見者で良かった。」</span></li>
+        </ol>
+
+        <h3>【Scenario B：理不尽なクレーム対応】</h3>
+        <div class="callout">
+          <div class="callout-title">💡 原則</div>
+          <p style="margin: 0;">「お客様は神様」ではない。スタッフの人権を侵害する暴言・暴力には、契約書に基づき<strong>「契約解除」</strong>を突きつける覚悟を持つ。スタッフに謝らせない。管理者がスーツを着て訪問し、「組織として」対応する。</p>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第7章：品質管理とリスクヘッジ</div>
+        <div>16</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 17: 第7章 - 品質管理とリスクヘッジ (2)
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">第7章</div>
+      </div>
+
+      <div class="page-inner">
+        <h2>7.2 実地指導（監査）の完全攻略</h2>
+        <p class="small" style="margin-bottom: 8px;">Audit Strategy ～「知らない」では済まされない、返還請求の防衛線～</p>
+
+        <p>行政の実地指導は「テスト」ではない。不備があれば過去に遡って報酬を没収される<strong>「追徴課税」</strong>である。</p>
+
+        <h4>【急所1：訪問時間の「形骸化」】</h4>
+        <div class="two-column">
+          <div class="callout callout--alert" style="margin: 0;">
+            <div class="callout-title">⛔ 指摘ポイント</div>
+            <p style="margin: 0;">「30分未満」の算定なのに、滞在時間が「25分」になっている、あるいは移動時間が物理的に不可能なスケジュール</p>
+          </div>
+          <div class="callout callout--success" style="margin: 0;">
+            <div class="callout-title">✓ 対策</div>
+            <p style="margin: 0;"><strong>GPSログの活用</strong>で記録と実態のズレをなくす。ケア記録の開始・終了時刻は分単位で正確に記載</p>
+          </div>
+        </div>
+
+        <h4>【急所2：加算要件の「根拠不足」】</h4>
+        <div class="callout callout--warning">
+          <div class="callout-title">⚠ 対策：ダブルチェック体制</div>
+          <p style="margin: 0;">月末のレセプト請求時、管理者以外が「加算と記録の整合性」のみをチェックする日を設ける。加算ごとの必須記載事項をテンプレート化する。</p>
+        </div>
+
+        <h4>【急所3：計画書・報告書の「日付ズレ」】</h4>
+        <div class="callout callout--alert">
+          <div class="callout-title">⛔ 致命的ミス</div>
+          <p style="margin: 0;">訪問日が「計画書作成日」より前になっている（＝計画なしに訪問している）。<strong>全額返還の対象。</strong><br>→ 対策：システム的に「計画書未承認」の状態では実績入力できないようロックをかける</p>
+        </div>
+
+        <hr class="section-separator">
+
+        <h2>7.3 インシデント・レポートの「活用」</h2>
+
+        <div class="highlight-box">
+          <p style="margin: 0; font-weight: 600;">【「責めない文化」の実装ツール】</p>
+          <p style="margin: 8px 0 0;">フォーマットの「反省・対策」欄を削除し、<strong>「仕組みの欠陥・環境要因」</strong>欄を作る。</p>
+          <div class="two-column" style="margin-top: 8px;">
+            <div><span class="label label--alert">✕ NG</span><br><span class="small">「確認不足でした。次は気をつけます」</span></div>
+            <div><span class="label label--success">○ OK</span><br><span class="small">「ダブルチェックの手順が不明確でした。チェックリストを導入します」</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>第7章：品質管理とリスクヘッジ</div>
+        <div>17</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 18: 終章 - あなたへの提案
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">終章</div>
+      </div>
+
+      <div class="page-inner">
+        <div class="chapter-heading">
+          <div class="chapter-heading__eyebrow">CONCLUSION</div>
+          <div class="chapter-heading__title">あなたへの提案</div>
+          <p class="chapter-heading__goal">「知識」を「現預金」に変えるための、最後のワンピース</p>
+        </div>
+
+        <h2>8.1 「標準解」の限界と「個別解」の必要性</h2>
+
+        <p>本書では、私が5億円企業を作る過程で得た「標準的な正解（The Standard）」を全て公開した。しかし、最後に残酷な真実を伝えなければならない。</p>
+
+        <div class="callout callout--alert">
+          <div class="callout-title">⛔ 残酷な真実</div>
+          <p style="margin: 0; font-weight: 600;">「教科書通りにやっても、失敗する可能性はある。」</p>
+        </div>
+
+        <p>なぜか？ビジネスには、本書では書ききれない<strong>「あなた固有の変数」</strong>が存在するからだ。</p>
+
+        <div class="three-column">
+          <div class="card">
+            <div class="card__title">変数A：エリア</div>
+            <div class="card__content">あなたの地域の競合は「大手」か「個人」か？高齢化のスピードは？</div>
+          </div>
+          <div class="card">
+            <div class="card__title">変数B：資金</div>
+            <div class="card__content">あなたの自己資金、親族の支援、信用情報は？</div>
+          </div>
+          <div class="card">
+            <div class="card__title">変数C：資質</div>
+            <div class="card__content">あなたは「攻めの営業」が得意か、「守りの管理」が得意か？</div>
+          </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 16px;">
+          <p style="margin: 0;">必要なのは、標準解をあなたの状況に合わせてカスタマイズする<br><strong>「個別最適化（Tuning）」</strong>である。</p>
+        </div>
+
+        <hr class="section-separator">
+
+        <h2>8.2 最後の決断</h2>
+        <p class="small" style="margin-bottom: 8px;">The Decision</p>
+
+        <p>経営者にとって最も重要な資質とは何か。それは「頭の良さ」でも「看護スキル」でもない。<strong>「決断のスピード」</strong>である。</p>
+
+        <div class="quote-box">
+          <p style="margin: 0; text-align: center; font-size: 14px;">成功する人間は、常に<br><strong>「成功者の地図とコンパスを手に入れて走る道」</strong>を選ぶ。<br><br>あなたが「成功する側の人間」であることを、<br>行動で証明してほしい。</p>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>終章：あなたへの提案</div>
+        <div>18</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 19: 重要事項（免責・著作権）
+         ============================================ -->
+    <section class="page page-break">
+      <div class="header-meta">
+        <div class="header-meta__left">
+          <span class="badge badge--outline" style="border-color: var(--color-alert); color: var(--color-alert);">機密</span>
+          <span>訪問看護経営の標準教科書</span>
+        </div>
+        <div class="header-meta__right">重要事項</div>
+      </div>
+
+      <div class="page-inner">
+        <h1>重要事項：法的免責と著作権について</h1>
+        <p class="small" style="margin-bottom: 16px;">Disclaimer ※本資料をご活用いただく前に、必ずお読みください</p>
+
+        <h2>1. 成果の非保証</h2>
+        <p class="small" style="margin-bottom: 8px;">No Guarantee of Results</p>
+        <p>本資料に記載されている内容は、著者の個人的な経験、独自の研究、および執筆時点での公的データに基づくものです。本資料に記載された手法を実践した結果として、特定の売上（例：年商5億円、1億円等）、利益、または事業の成功を保証するものではありません。事業経営には不確実性が伴い、個別の地域特性、競合状況、経済情勢により結果は異なります。</p>
+
+        <h2>2. 責任の制限</h2>
+        <p class="small" style="margin-bottom: 8px;">Limitation of Liability</p>
+        <p>本資料の情報を用いて行われた事業活動、投資判断、およびその結果生じた直接的・間接的な損害（金銭的損失、事業の中断、データの喪失等を含むがこれに限られない）について、著者および発行元は一切の責任を負いません。全ての経営判断は、読者ご自身の責任において行ってください。</p>
+
+        <h2>3. 法令・制度の変更</h2>
+        <p class="small" style="margin-bottom: 8px;">Regulatory Changes</p>
+        <p>本資料は、執筆時点（2025年現在）の医療保険制度、介護保険制度、および関連法令に基づき作成されています。診療報酬や介護報酬の改定、労働法制の変更等により、記載内容が最新の法令と一致しなくなる可能性があります。実務への適用に際しては、必ず最新の公的情報をご確認いただくか、顧問税理士、弁護士、社会保険労務士等の専門家にご相談ください。</p>
+
+        <h2>4. 著作権について</h2>
+        <p class="small" style="margin-bottom: 8px;">Copyright</p>
+        <div class="callout">
+          <p style="margin: 0;">本資料の著作権は、<strong>一般社団法人全国訪問看護経営研究協会</strong>に帰属します。著者の書面による事前の許可なく、本資料の全部または一部を複製、転載、配布、販売、送信することは、営利・非営利を問わず固く禁じます。</p>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <div>重要事項：法的免責と著作権について</div>
+        <div>19</div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PAGE 20: 裏表紙
+         ============================================ -->
+    <section class="page page--cover">
+      <div class="page-inner" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 200mm; text-align: center;">
+        
+        <div style="margin-bottom: 40px;">
+          <p class="small" style="letter-spacing: 0.2em; margin-bottom: 8px;">WHITE PAPER 2025</p>
+          <h1 style="font-size: 20px; margin-bottom: 8px;">訪問看護経営の標準教科書</h1>
+          <p class="small">The Standard Textbook for Home Visit Nursing Management</p>
+        </div>
+
+        <div style="margin-bottom: 40px; padding: 20px; border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-soft);">
+          <p style="margin: 0 0 8px; font-size: 12px; color: var(--color-text-muted);">発行</p>
+          <p style="margin: 0; font-weight: 600;">一般社団法人<br>全国訪問看護経営研究協会</p>
+          <p style="margin: 12px 0 0; font-size: 11px; color: var(--color-text-muted);">Japan Home Visit Nursing<br>Management Research Association</p>
+        </div>
+
+        <div>
+          <p style="margin: 0 0 4px; font-size: 12px; color: var(--color-text-muted);">著者</p>
+          <p style="margin: 0; font-weight: 600; font-size: 14px;">渋谷 慶太</p>
+          <p style="margin: 4px 0 0; font-size: 11px; color: var(--color-text-muted);">Keita Shibuya</p>
+        </div>
+
+        <div style="margin-top: 40px;">
+          <p class="small" style="color: var(--color-text-muted);">© 2025 一般社団法人全国訪問看護経営研究協会<br>All Rights Reserved.</p>
+        </div>
+
+      </div>
+
+      <div class="cover-strip">
+        <div class="cover-strip__text">JAPAN HOME VISIT NURSING MANAGEMENT RESEARCH ASSOCIATION</div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
+
