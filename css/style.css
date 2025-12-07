@@ -70,21 +70,86 @@ body {
    ========================================================================== */
 
 @page {
-  size: A4;
-  margin: 16mm 18mm;
+  size: A4 portrait;
+  margin: 0;
 }
 
 @media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+  }
+  
   body { 
     background: #ffffff; 
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
+  
+  .document {
+    padding: 0;
+  }
+  
   .page { 
-    margin: 0; 
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    max-height: 297mm;
+    margin: 0;
+    padding: 0;
     box-shadow: none; 
-    border-radius: 0; 
+    border-radius: 0;
+    overflow: hidden;
+    page-break-after: always;
+    page-break-inside: avoid;
   }
+  
+  .page:last-child {
+    page-break-after: auto;
+  }
+  
   .no-print { 
     display: none !important; 
+  }
+  
+  /* Prevent content from breaking across pages */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  .callout,
+  .card,
+  .metric-box,
+  .highlight-box,
+  .quote-box,
+  table,
+  .toc-block {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Force page breaks where needed */
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+  
+  .page-break-before {
+    page-break-before: always;
+    break-before: page;
+  }
+  
+  .avoid-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 }
 
@@ -99,26 +164,33 @@ body {
 .page {
   position: relative;
   width: var(--page-width);
+  height: var(--page-height);
   min-height: var(--page-height);
+  max-height: var(--page-height);
   margin: 0 auto 16px;
   background: var(--color-bg-page);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .page-inner {
   max-width: 130mm;
   margin: 22mm auto 20mm;
+  max-height: 245mm;
+  overflow: hidden;
 }
 
 .page--cover .page-inner {
   max-width: 140mm;
   margin-top: 30mm;
+  max-height: 240mm;
 }
 
 .page--toc .page-inner {
   max-width: 150mm;
   margin-top: 22mm;
+  max-height: 245mm;
 }
 
 .page--wide .page-inner {
@@ -126,7 +198,14 @@ body {
 }
 
 .page-break { 
-  page-break-after: always; 
+  page-break-after: always;
+  break-after: page;
+}
+
+/* Utility class to prevent breaking */
+.no-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 /* ==========================================================================
