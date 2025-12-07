@@ -131,9 +131,13 @@ body {
   .highlight-box,
   .quote-box,
   table,
-  .toc-block {
-    page-break-inside: avoid;
-    break-inside: avoid;
+  .toc-block,
+  .two-column,
+  .three-column,
+  [style*="border-radius"],
+  [style*="background:"] {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
   
   /* Force page breaks where needed */

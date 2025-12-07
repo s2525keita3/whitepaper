@@ -77,11 +77,11 @@ body {
   html, body { width: 210mm; height: 297mm; margin: 0; padding: 0; }
   body { background: #ffffff; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
   .document { padding: 0; }
-  .page { width: 210mm; height: 297mm; min-height: 297mm; max-height: 297mm; margin: 0; box-shadow: none; border-radius: 0; page-break-after: always; page-break-inside: avoid; overflow: hidden; }
+  .page { width: 210mm; height: 297mm; min-height: 297mm; max-height: 297mm; margin: 0; box-shadow: none; border-radius: 0; page-break-after: always; overflow: hidden; }
   .page:last-child { page-break-after: auto; }
   .no-print { display: none !important; }
-  h1, h2, h3, h4 { page-break-after: avoid; }
-  .callout, .card, table { page-break-inside: avoid; }
+  h1, h2, h3, h4 { page-break-after: avoid; break-after: avoid; }
+  .callout, .card, .highlight-box, .quote-box, .metric-box, table, .two-column, .three-column { page-break-inside: avoid !important; break-inside: avoid !important; }
 }
 
 .document { padding: 16px 0 32px; }
@@ -1919,27 +1919,25 @@ tr:nth-child(even) { background: #fafbfc; }
       </div>
 
       <div class="page-inner">
-        <h1 style="margin-bottom: 8px;">あなたへの次のステップ</h1>
-        <p style="margin-bottom: 20px; font-size: 14px; line-height: 1.7;">
+        <h1 style="margin-bottom: 12px;">あなたへの次のステップ</h1>
+        <p style="margin-bottom: 24px; font-size: 14px; line-height: 1.7;">
           ここまでお読みいただき、ありがとうございます。本書の知識は、<strong>実践して初めて価値を生みます。</strong>
         </p>
 
         <!-- メインCTA: 個別相談 -->
-        <div style="background: linear-gradient(135deg, #1a5a4a 0%, #2d7a6a 100%); color: white; padding: 20px; border-radius: 10px; margin-bottom: 16px;">
-          <div style="display: flex; align-items: flex-start; gap: 20px;">
-            <div style="flex: 1;">
-              <p style="font-size: 11px; margin-bottom: 4px; opacity: 0.9;">✦ 今すぐ行動したい方へ</p>
-              <h2 style="color: white; margin-bottom: 10px; font-size: 18px;">無料個別相談（30分）</h2>
-              <p style="margin-bottom: 10px; line-height: 1.6; opacity: 0.95; font-size: 13px;">
-                「うちの事業所の場合はどうすればいい？」そんな疑問に、著者が直接お答えします。
-              </p>
-              <ul style="margin: 0; padding-left: 18px; line-height: 1.7; font-size: 12px;">
-                <li>あなたの事業所の現状分析</li>
-                <li>具体的な改善ポイントのアドバイス</li>
-                <li>今すぐ取り組むべき優先順位の整理</li>
-              </ul>
-            </div>
-            <div style="text-align: center; background: white; padding: 12px; border-radius: 8px;">
+        <div class="highlight-box" style="background: linear-gradient(135deg, #1a5a4a 0%, #2d7a6a 100%); border: none; color: white; padding: 24px; margin-bottom: 20px;">
+          <p style="font-size: 11px; margin-bottom: 6px; opacity: 0.9;">✦ 今すぐ行動したい方へ</p>
+          <h2 style="color: white; margin-bottom: 12px; font-size: 20px; border: none; padding: 0;">無料個別相談（30分）</h2>
+          <p style="margin-bottom: 16px; line-height: 1.7; opacity: 0.95; font-size: 13px;">
+            「うちの事業所の場合はどうすればいい？」そんな疑問に、著者が直接お答えします。
+          </p>
+          <div style="display: flex; align-items: center; gap: 24px;">
+            <ul style="margin: 0; padding-left: 18px; line-height: 1.8; font-size: 12px; flex: 1;">
+              <li>あなたの事業所の現状分析</li>
+              <li>具体的な改善ポイントのアドバイス</li>
+              <li>今すぐ取り組むべき優先順位の整理</li>
+            </ul>
+            <div style="text-align: center; background: white; padding: 12px; border-radius: 8px; flex-shrink: 0;">
               <p style="color: #1a5a4a; font-size: 10px; font-weight: 600; margin-bottom: 6px;">▼ 日程予約 ▼</p>
               <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://timerex.net/s/s2525keita3_0912/470321af" alt="QRコード" style="width: 100px; height: 100px;">
             </div>
@@ -1947,20 +1945,20 @@ tr:nth-child(even) { background: #fafbfc; }
         </div>
 
         <!-- サブCTA: 有料会員 -->
-        <div style="background: var(--color-soft); border: 2px solid var(--color-brand); padding: 16px; border-radius: 10px;">
-          <div style="display: flex; align-items: flex-start; gap: 20px;">
+        <div class="highlight-box" style="background: var(--color-soft); border: 2px solid var(--color-brand); padding: 20px;">
+          <p style="font-size: 11px; margin-bottom: 6px; color: var(--color-text-muted);">✦ 継続的に学びたい方へ</p>
+          <h2 style="margin-bottom: 10px; font-size: 17px;">協会有料会員のご案内</h2>
+          <div style="display: flex; align-items: center; gap: 24px;">
             <div style="flex: 1;">
-              <p style="font-size: 11px; margin-bottom: 4px; color: var(--color-text-muted);">✦ 継続的に学びたい方へ</p>
-              <h2 style="margin-bottom: 8px; font-size: 16px;">協会有料会員のご案内</h2>
-              <p style="margin-bottom: 8px; line-height: 1.6; font-size: 12px;">
+              <p style="margin-bottom: 10px; line-height: 1.6; font-size: 12px;">
                 経営の最新ノウハウ、法改正情報、会員限定勉強会など、継続的なサポートを提供します。
               </p>
               <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-                <span style="background: white; padding: 3px 10px; border-radius: 4px; font-size: 11px;">🎓 会員限定勉強会</span>
-                <span style="background: white; padding: 3px 10px; border-radius: 4px; font-size: 11px;">💬 経営相談サポート</span>
+                <span style="background: white; padding: 4px 12px; border-radius: 4px; font-size: 11px;">🎓 会員限定勉強会</span>
+                <span style="background: white; padding: 4px 12px; border-radius: 4px; font-size: 11px;">💬 経営相談サポート</span>
               </div>
             </div>
-            <div style="text-align: center;">
+            <div style="text-align: center; flex-shrink: 0;">
               <p style="font-size: 10px; color: var(--color-text-muted); margin-bottom: 6px;">▼ 詳細・お申込み ▼</p>
               <div style="background: white; padding: 10px; border-radius: 8px; border: 1px solid var(--color-border);">
                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=90x90&data=https://jnhc-mra-lp-new.vercel.app/" alt="QRコード" style="width: 90px; height: 90px;">
