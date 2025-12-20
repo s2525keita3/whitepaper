@@ -21,37 +21,19 @@
   
   <style>
     /* 追加の独自スタイル（ガイド専用） */
-    .expert-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin: 20px 0;
-    }
-    .expert-card {
-      background: var(--color-soft);
-      padding: 15px;
-      border-radius: 8px;
-      border-top: 4px solid var(--color-brand);
-      font-size: 0.9em;
-    }
-    .expert-card h4 {
-      margin-bottom: 8px;
-      color: var(--color-brand);
-      font-size: 1.1em;
-    }
     .dictionary-table th {
       background: var(--color-brand);
       color: white;
       font-size: 0.9em;
     }
     .dictionary-table td {
-      font-size: 0.9em;
+      font-size: 0.85em;
       padding: 8px;
     }
     .dictionary-table td:first-child {
       background: var(--color-brand-soft);
       font-weight: bold;
-      width: 28%;
+      width: 25%;
     }
     .check-list {
       list-style: none;
@@ -72,13 +54,32 @@
     .example-code {
       background: #f8f9fa;
       border: 1px solid #dee2e6;
-      padding: 15px;
+      padding: 12px;
       border-radius: 4px;
       font-family: "Courier New", Courier, monospace;
       font-size: 0.85em;
       line-height: 1.5;
       margin: 10px 0;
       white-space: pre-wrap;
+    }
+    .disclaimer-box {
+      background: #fff;
+      border: 2px solid var(--color-alert);
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .disclaimer-box h3 {
+      color: var(--color-alert);
+      margin-top: 0;
+      text-align: center;
+      border: none;
+      padding: 0;
+    }
+    .disclaimer-text {
+      font-size: 11px;
+      line-height: 1.6;
+      color: #333;
     }
   </style>
 </head>
@@ -103,7 +104,7 @@
         </h1>
         <p class="lead" style="color: var(--color-text-muted);">
           「何が労働で、何が残業か」を迷わないための基礎知識を整理。<br />
-          専門家3名の視点から導き出した、法的リスク回避の決定版。
+          法的リスクを最小化し、健全な組織運営を実現するための決定版。
         </p>
         
         <div style="margin-top: 60mm;">
@@ -123,7 +124,7 @@
       </div>
     </div>
 
-    <!-- 2. Intro -->
+    <!-- 2. Intro & Dictionary -->
     <div class="page">
       <div class="header-meta">
         <span>労働時間・残業・賃金の鉄則ガイド</span>
@@ -137,36 +138,35 @@
           <p><strong>前提：</strong>ここでは、まず法律の最低ラインを大学生でもわかる言葉で整理します。現場の細かい運用は会社ごとに設計してください。</p>
         </div>
 
-        <h3 style="margin-top: 30px;">監修視点（専門家3人で議論した結論）</h3>
-        <div class="expert-grid">
-          <div class="expert-card">
-            <h4>社労士</h4>
-            <p>ルールを“回る形”に落とす。現場の混乱を防ぐための「仕組み」を重視します。</p>
-          </div>
-          <div class="expert-card">
-            <h4>弁護士</h4>
-            <p>言葉の定義ズレが未払いの火種に。通知書や規程を整え、法的防壁を構築します。</p>
-          </div>
-          <div class="expert-card">
-            <h4>実務家</h4>
-            <p>監督で見られるのは実態。勤怠と賃金の整合が取れているかを厳しくチェックします。</p>
-          </div>
-        </div>
-
-        <h2 style="margin-top: 40px;">1. 用語の辞書</h2>
+        <h2 style="margin-top: 40px;">1. 用語の辞書（基本の「き」）</h2>
         <div class="summary-box" style="margin-top: 15px;">
           <table class="dictionary-table">
             <thead>
-              <tr><th>用語</th><th>内容</th></tr>
+              <tr><th>用語</th><th>超ざっくり解説</th><th>重要ポイント</th></tr>
             </thead>
             <tbody>
-              <tr><td>所定労働時間</td><td>会社が決めた「普段の勤務時間」</td></tr>
-              <tr><td>法定労働時間</td><td>法律の上限（原則：1日8h/週40h）</td></tr>
-              <tr><td>時間外労働</td><td>法定時間を超えた労働（残業代対象）</td></tr>
-              <tr><td>法定休日</td><td>法律で必ず必要な休日（毎週1日等）</td></tr>
-              <tr><td>深夜労働</td><td>22:00〜翌5:00の労働（深夜割増）</td></tr>
+              <tr><td>所定労働時間</td><td>会社が決めた勤務時間</td><td>例：9:00-18:00（休憩1h）など</td></tr>
+              <tr><td>法定労働時間</td><td>法律が決めた上限</td><td>1日8時間・週40時間が原則</td></tr>
+              <tr><td>時間外労働</td><td>法定時間を超えた労働</td><td>いわゆる「法定時間外」＝割増の対象</td></tr>
+              <tr><td>法定休日</td><td>法律で必ず必要な休日</td><td>原則「毎週1日」または「4週4日」</td></tr>
+              <tr><td>深夜労働</td><td>22:00〜翌朝5:00</td><td>深夜割増（+25%以上）の対象</td></tr>
             </tbody>
           </table>
+        </div>
+
+        <h2 style="margin-top: 35px;">2. 「残業」と「時間外（法定超）」の違い</h2>
+        <p>「残業」という言葉には、実は法的に異なる2つの意味が混在しています。</p>
+        <ul>
+          <li><strong>残業：</strong>会社の“所定労働時間”を超えた分。社内用語として使われます。</li>
+          <li><strong>時間外（法定超）：</strong>法律の上限（1日8h・週40h）を超えた分。<b>割増賃金（残業代）の支払い義務が確実に発生する領域</b>です。</li>
+        </ul>
+
+        <div class="card" style="background: var(--color-warning-soft); padding: 15px; margin-top: 15px;">
+          <p style="font-size: 13px;"><strong>例：所定7.5時間の会社（9:00-17:30 / 休憩1h）の場合</strong></p>
+          <ul style="font-size: 13px;">
+            <li>17:30〜18:00（0.5h）：社内では「残業」ですが、法定（8h）内。割増率は1.0倍でも法的には可。</li>
+            <li>18:00以降：法定（8h）を超えるため、「法定時間外」として1.25倍以上の支払いが必要。</li>
+          </ul>
         </div>
       </div>
       
@@ -176,7 +176,7 @@
       </div>
     </div>
 
-    <!-- 3. Definitions -->
+    <!-- 3. Labor Time Definition -->
     <div class="page">
       <div class="header-meta">
         <span>労働時間・残業・賃金の鉄則ガイド</span>
@@ -184,44 +184,38 @@
       </div>
       
       <div class="page-inner">
-        <h2>2. 「残業」と「時間外（法定超）」の違い</h2>
-        <p>一般的に使われる「残業」は、実は2種類に分けられます。</p>
-        
-        <div class="highlight-box" style="margin: 20px 0;">
-          <ul>
-            <li><strong>残業：</strong>会社の“所定労働時間”を超えた分（社内ルール）。</li>
-            <li><strong>時間外（法定超）：</strong>法律の上限を超えた分。<b>これが割増賃金の対象</b>です。</li>
-          </ul>
-        </div>
-
-        <div class="card" style="background: var(--color-warning-soft); border: 1px solid var(--color-warning); padding: 15px;">
-          <h4 style="color: var(--color-warning); margin-top: 0;">例：所定7.5時間の会社の場合</h4>
-          <p style="font-size: 13px;">9:00-17:30（休憩1h）実働7.5hの会社では：</p>
-          <ul style="font-size: 13px;">
-            <li><strong>17:30-18:00（0.5h）：</strong>法定内残業。割増は必須ではない。</li>
-            <li><strong>18:00以降：</strong>法定超。25%以上の割増が必須。</li>
-          </ul>
-        </div>
-
-        <h2 style="margin-top: 40px;">3. 労働時間の考え方（図解）</h2>
-        <div class="highlight-box" style="text-align: center; padding: 25px; background: var(--color-brand-soft);">
+        <h2>3. 労働時間の考え方（図解）</h2>
+        <div class="highlight-box" style="text-align: center; padding: 20px; background: var(--color-brand-soft);">
           <div style="font-size: 1.1em; font-weight: bold; color: var(--color-brand);">
-            拘束時間（始業〜終業）<br>
-            − 休憩時間<br>
+            拘束時間（始業 〜 終業）<br>
+            − 休憩時間（完全に自由な時間）<br>
             ＝ 労働時間（賃金計算の土台）
           </div>
         </div>
 
-        <h3 style="margin-top: 30px;">4. 「労働時間 = 会社の指揮命令下」</h3>
-        <p>労働時間とは、<b>「会社の指示で動いていて、断りにくい状態の時間」</b>です。</p>
+        <h2 style="margin-top: 40px;">4. 「労働時間 = 会社の指揮命令下」</h2>
+        <p>労働時間とは、<b>「会社の指示で動いていて、断りにくい状態の時間」</b>を指します。実際に作業をしていなくても、指示があれば労働時間になり得ます。</p>
+        
         <div class="summary-box">
-          <p><strong>判断のコツ：</strong></p>
+          <p><strong>判断のコツ（初心者向け3問）</strong></p>
           <ul class="check-list">
-            <li>その行動を会社が求めているか？</li>
-            <li>断れたか？ 途中で抜けられたか？</li>
-            <li>場所・時間の自由があったか？</li>
+            <li>その行動を会社が求めている？（明示的、あるいは暗黙の指示）</li>
+            <li>断れた？ 途中で自由に抜けられた？（拒否権の有無）</li>
+            <li>場所・時間の自由があった？（自由が少ないほど労働時間寄り）</li>
           </ul>
         </div>
+
+        <h2 style="margin-top: 40px;">5. 休憩の成立条件（“取ったことになってない休憩”）</h2>
+        <p>法律上の休憩は、労働から解放され「自由に使える」ことが条件です。以下のケースは休憩とみなされず、労働時間（未払い残業代）となるリスクがあります。</p>
+        
+        <div class="card card--alert" style="margin-top: 15px;">
+          <ul>
+            <li>休憩中も電話当番をしており、鳴ったら即対応している</li>
+            <li>車内休憩中だが、会社からのチャット返信が義務化されている</li>
+            <li>「忙しくない時に適宜取って」と言われ、実態として取れていない</li>
+          </ul>
+        </div>
+        <p style="font-size: 12px; margin-top: 10px;">※労働時間が6時間超なら45分以上、8時間超なら1時間以上の休憩が必須です。</p>
       </div>
       
       <div class="footer-meta">
@@ -230,7 +224,7 @@
       </div>
     </div>
 
-    <!-- 4. Break & Examples -->
+    <!-- 4. Nursing Home Care Specifics -->
     <div class="page">
       <div class="header-meta">
         <span>労働時間・残業・賃金の鉄則ガイド</span>
@@ -238,42 +232,55 @@
       </div>
       
       <div class="page-inner">
-        <h2>5. 休憩の成立条件</h2>
-        <p>休憩は「ただ席を外す」のではなく、労働から完全に解放される時間です。</p>
-        
-        <div class="card card--alert" style="margin: 15px 0;">
-          <h4 style="margin-top: 0;">“取ったことになってない休憩”の例</h4>
-          <ul>
-            <li>休憩中も電話当番（鳴ったら即対応）</li>
-            <li>車内休憩だがチャット返信を求められる</li>
-            <li>「適当に取って」と言われ、取れずに勤怠だけ引かれる</li>
-          </ul>
-        </div>
-
-        <h2 style="margin-top: 35px;">6. 訪問看護あるある：労働時間の境界</h2>
+        <h2>6. 訪問看護あるある：どこまでが労働時間か</h2>
         <div class="summary-box">
           <table style="width: 100%; border-collapse: collapse;">
-            <tr style="border-bottom: 1px solid var(--color-border);">
-              <td style="padding: 10px; font-weight: bold; width: 40%;">訪問間移動</td>
-              <td style="padding: 10px; color: var(--color-brand);">原則：労働時間</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-border);">
-              <td style="padding: 10px; font-weight: bold;">利用者宅での記録</td>
-              <td style="padding: 10px; color: var(--color-brand);">原則：労働時間</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-border);">
-              <td style="padding: 10px; font-weight: bold;">帰宅後の記録</td>
-              <td style="padding: 10px; color: var(--color-alert);">要注意：労働時間の火種</td>
-            </tr>
-            <tr>
-              <td style="padding: 10px; font-weight: bold;">直行直帰の移動</td>
-              <td style="padding: 10px; color: var(--color-text-muted);">原則：通勤（非労働）</td>
-            </tr>
+            <thead>
+              <tr style="border-bottom: 2px solid var(--color-brand);">
+                <th style="padding: 10px; text-align: left;">ケース</th>
+                <th style="padding: 10px; text-align: left;">判断基準（原則）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 10px; font-weight: bold;">訪問間の移動</td>
+                <td style="padding: 10px;">◯ 労働時間（業務指示下にあるため）</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 10px; font-weight: bold;">利用者宅での記録</td>
+                <td style="padding: 10px;">◯ 労働時間（本来の業務そのもの）</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 10px; font-weight: bold;">帰宅後の記録</td>
+                <td style="padding: 10px;">△ 労働時間（会社が黙認・要求していれば労働）</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; font-weight: bold;">直行直帰の移動</td>
+                <td style="padding: 10px;">✖ 通勤（指揮命令下になければ非労働）</td>
+              </tr>
+            </tbody>
           </table>
         </div>
 
-        <h3 style="margin-top: 25px;">記録・申し送り・電話対応</h3>
-        <p>これらは「善意」ではなく業務です。<b>“やらせない設計”</b>（記録は訪問内・勤務内で完結）が最強の予防策です。</p>
+        <h2 style="margin-top: 35px;">7. 記録・申し送り・電話対応</h2>
+        <p>これらは「善意」ではなく業務です。<b>「記録は家でやってね」</b>という運用が常態化すると、数年分の未払い賃金請求という特大のリスクを抱えることになります。</p>
+        <div class="highlight-box">
+          <strong>おすすめ運用：</strong>
+          <p>記録は原則「訪問内＋勤務内」で完結する設計（テンプレ、短文化、音声入力）を行い、勤務時間外のチャットや電話は「当番制」などで時間を明確に切り分けましょう。</p>
+        </div>
+
+        <h2 style="margin-top: 35px;">9. オンコール待機の扱い</h2>
+        <p>オンコールは「待機＝全部労働時間」ではありません。分かれ目は<b>「拘束の強さ」</b>です。</p>
+        <div class="two-column" style="margin-top: 15px;">
+          <div class="card" style="background: var(--color-success-soft);">
+            <h4 style="color: var(--color-success); margin: 0 0 5px;">労働時間でない整理</h4>
+            <p style="font-size: 11px;">自宅で自由に過ごせ、呼出頻度が低く、外出も一定程度自由な場合。</p>
+          </div>
+          <div class="card" style="background: var(--color-alert-soft);">
+            <h4 style="color: var(--color-alert); margin: 0 0 5px;">労働時間扱い</h4>
+            <p style="font-size: 11px;">事業所待機、極端な移動制限、即時応答・出動が厳格に義務付けられている場合。</p>
+          </div>
+        </div>
       </div>
       
       <div class="footer-meta">
@@ -282,7 +289,7 @@
       </div>
     </div>
 
-    <!-- 5. On-call & Management -->
+    <!-- 5. Management Supervisor & 36 -->
     <div class="page">
       <div class="header-meta">
         <span>労働時間・残業・賃金の鉄則ガイド</span>
@@ -290,34 +297,28 @@
       </div>
       
       <div class="page-inner">
-        <h2>9. オンコール待機の扱い</h2>
-        <p>分かれ目は「拘束の強さ（自由の程度）」です。</p>
-        <div class="two-column" style="margin: 15px 0;">
-          <div class="card" style="background: var(--color-success-soft);">
-            <h4 style="color: var(--color-success); margin-top: 0;">労働時間でない</h4>
-            <p style="font-size: 12px;">自宅で自由に過ごせる、外出も可、呼出頻度が低い場合。</p>
-          </div>
-          <div class="card" style="background: var(--color-alert-soft);">
-            <h4 style="color: var(--color-alert); margin-top: 0;">労働時間である</h4>
-            <p style="font-size: 12px;">事業所待機、極端な移動制限、即時出動が実質義務の場合。</p>
-          </div>
-        </div>
-
-        <h2 style="margin-top: 35px;">10. 管理監督者の判定ガイド</h2>
-        <p>肩書（管理者）ではなく「実態」で判断されます。</p>
+        <h2>10. 管理監督者の判定ガイド（肩書に騙されない）</h2>
+        <p>「管理者だから残業代不要」は未払いトラブルの典型です。判定は<b>「実態」</b>で行われます。</p>
         <div class="summary-box">
-          <p><strong>NGになりやすい危険なパターン：</strong></p>
-          <ul>
-            <li>実態は「現場稼働がメイン」である</li>
-            <li>採用や予算の決定権がない</li>
-            <li>出退勤を厳密に管理され、遅刻早退が欠勤控除される</li>
-            <li>一般スタッフと給与差がほとんどない</li>
+          <p><strong>判定チェック（この4点が弱いとアウト）</strong></p>
+          <ul class="check-list">
+            <li><strong>権限：</strong>採用・解雇・人事評価・シフト決定に決定権があるか。</li>
+            <li><strong>裁量：</strong>出退勤や仕事の進め方を、自分の判断で決められるか。</li>
+            <li><strong>待遇：</strong>一般スタッフより明確に高い処遇（賃金・賞与等）があるか。</li>
+            <li><strong>勤怠：</strong>遅刻早退等で一般社員と同様に減給されていないか。</li>
           </ul>
         </div>
+        <p style="font-size: 12px; color: var(--color-alert);">※特に「現場稼働がメインの管理者」は、管理監督者と認められないリスクが極めて高いです。</p>
 
-        <h2 style="margin-top: 35px;">14. 36協定の超入門</h2>
-        <div class="callout callout--warning">
-          <p>36協定は、会社が法定労働時間を超えて働かせるための<b>「許可証」</b>です。これがないのに残業をさせると、会社は法違反となります。必ず締結・届出を行いましょう。</p>
+        <h2 style="margin-top: 40px;">14. 36協定の超入門</h2>
+        <p>36協定は、会社が<b>法定労働時間を超えて働かせるための「許可証」</b>です。これがないのに残業をさせると、たとえ残業代を払っていても法違反（刑事罰の対象）になります。</p>
+        
+        <div class="highlight-box">
+          <p><strong>初心者が覚えるべき上限規制：</strong></p>
+          <ul>
+            <li>原則：月45時間・年360時間が上限。</li>
+            <li>例外（特別条項）：特別な事情がある場合でも、年720時間、月平均80時間以内などの厳格な上限があります。</li>
+          </ul>
         </div>
       </div>
       
@@ -336,35 +337,35 @@
       
       <div class="page-inner">
         <h2>17. 残業代の計算例</h2>
-        <div class="highlight-box" style="padding: 20px; background: var(--color-brand-soft);">
-          <div style="font-size: 14px; font-weight: bold; text-align: center; color: var(--color-brand);">
-            残業代 = 1時間あたり賃金 × 対象時間 × 割増率
-          </div>
+        <div class="highlight-box" style="text-align: center; padding: 15px; background: var(--color-brand-soft);">
+          <strong>残業代 = 1時間あたり賃金 × 対象時間 × 割増率</strong>
         </div>
         
-        <div style="margin-top: 20px;">
-          <h4>1時間あたり賃金の出し方</h4>
-          <p>月の基礎賃金 ÷ 月平均所定労働時間</p>
-          <div class="example-code">
-例：基本給 30万円 / 月160時間勤務
-300,000 ÷ 160 = 1,875円 (1時間単価)
-          </div>
+        <h3 style="margin-top: 25px;">18. 時給換算（単価）の出し方</h3>
+        <p>1時間あたり賃金 ＝ 月の基礎賃金 ÷ 月平均所定労働時間</p>
+        <div class="card" style="background: var(--color-soft); padding: 12px; font-size: 12px;">
+          <strong>基礎賃金から除外できるもの（限定列挙）：</strong><br>
+          家族手当、通勤手当、別居手当、子女教育手当、住宅手当、臨時に支払われた賃金、1ヶ月を超える期間ごとに支払われる賃金（賞与等）。これら以外の手当はすべて単価計算に含める必要があります。
         </div>
 
-        <h2 style="margin-top: 35px;">21. 固定残業（みなし残業）の必須3点</h2>
+        <h3 style="margin-top: 25px;">19. 割増率の考え方</h3>
+        <p>割増は「重なると足し算」になります。</p>
+        <div class="summary-box">
+          <ul>
+            <li>法定時間外：<strong>+25%</strong>（月60h超は+50%）</li>
+            <li>休日労働（法定休日）：<strong>+35%</strong></li>
+            <li>深夜労働（22:00〜5:00）：<strong>+25%</strong></li>
+          </ul>
+          <p style="font-size: 12px;">例：深夜に時間外労働をした場合 ＝ 1.25 + 0.25 = <b>1.5倍</b></p>
+        </div>
+
+        <h2 style="margin-top: 35px;">21. 固定残業代の“必須3点セット”</h2>
         <div class="card card--info">
           <ol>
-            <li><strong>基本給と分ける：</strong>「給与に含む」は無効リスク。</li>
-            <li><strong>時間数を明示：</strong>「月20時間分」など。</li>
-            <li><strong>超過分は追加支給：</strong>超えたら1分単位で差額を払う。</li>
+            <li><strong>基本給と分ける：</strong>給与明細で金額を明確にする。</li>
+            <li><strong>時間数を明示：</strong>「月20時間分」など契約書に記載。</li>
+            <li><strong>超過分は追加支給：</strong>枠を超えたら必ず差額を1分単位で払う。</li>
           </ol>
-        </div>
-
-        <h3 style="margin-top: 25px;">23. よくあるNG表現集</h3>
-        <div style="color: var(--color-alert); font-size: 13px;">
-          <p>✖「残業代込み（詳細不明）」</p>
-          <p>✖「みなし残業○万円（何時間分か不明）」</p>
-          <p>✖「固定残業代に超過分含む（追加支給しない）」</p>
         </div>
       </div>
       
@@ -374,7 +375,7 @@
       </div>
     </div>
 
-    <!-- 7. Operations -->
+    <!-- 7. Operations & Management -->
     <div class="page">
       <div class="header-meta">
         <span>労働時間・残業・賃金の鉄則ガイド</span>
@@ -382,36 +383,29 @@
       </div>
       
       <div class="page-inner">
-        <h2>26. 運用の鉄則：勤怠の証拠</h2>
-        <p>労務管理は、結局<b>「いつからいつまで働いたか」</b>を会社が説明できる形（客観的記録）で残すことに尽きます。</p>
+        <h2>26. 運用の鉄則：勤怠の証拠管理</h2>
+        <p>労務管理のゴールは、<b>「いつからいつまで働いたか」</b>を会社が客観的に説明できることです。端数を丸める（切り捨てる）運用は法的に認められません。</p>
         
-        <div class="summary-box">
-          <ul class="check-list">
-            <li><strong>分単位管理：</strong>端数切り捨ては未払いの火種。分単位で計算を。</li>
-            <li><strong>スマホ打刻：</strong>直行直帰時の位置情報付き打刻が推奨。</li>
-            <li><strong>申請承認フロー：</strong>「勝手に残業」を防ぐ事前申請制の導入。</li>
+        <div class="highlight-box">
+          <p><strong>おすすめの3点セット運用：</strong></p>
+          <ul>
+            <li><strong>勤怠アプリ：</strong>スマホでの位置情報付き打刻（分単位）。</li>
+            <li><strong>業務記録：</strong>電子カルテ等の訪問ログとの照合。</li>
+            <li><strong>申請承認：</strong>時間外労働の事前/事後申請の徹底。</li>
           </ul>
         </div>
 
-        <h2 style="margin-top: 35px;">29. “サービス残業”を止める設計</h2>
-        <div class="highlight-box">
-          <p>サビ残はスタッフの善意で始まり、最後は会社の責任になります。</p>
-          <ol>
-            <li>記録は「訪問内＋勤務内」で終えるルール化</li>
-            <li>電話・チャットは当番制で時間外を拾う</li>
-            <li>月次で勤怠と実績ログ（電子カルテ等）を照合</li>
-          </ol>
-        </div>
-
-        <h2 style="margin-top: 35px;">33. 月次点検シート（経営者向け）</h2>
+        <h2 style="margin-top: 40px;">33. 月次点検シート（経営者向け）</h2>
         <div class="summary-box" style="background: var(--color-warning-soft); border: 1px solid var(--color-warning);">
           <ul class="check-list">
             <li>実残業が固定枠を超えている人への追加支給漏れはないか？</li>
             <li>月60時間を超えた人の割増率（50%）対応はできているか？</li>
-            <li>「休憩なし」なのに控除されている矛盾はないか？</li>
-            <li>直行直帰の始業・終業時刻が不自然ではないか？</li>
+            <li>「休憩なし」の打刻なのに実態が不明確な人はいないか？</li>
+            <li>直行直帰の始業・終業時刻が不自然（矛盾）ではないか？</li>
+            <li>管理監督者扱いのスタッフが、実態として現場のみになっていないか？</li>
           </ul>
         </div>
+        <p style="font-size: 12px; margin-top: 10px;">※労基署の調査や紛争で最初に見られるのは、規程ではなく<b>「実態の整合性」</b>です。</p>
       </div>
       
       <div class="footer-meta">
@@ -420,27 +414,38 @@
       </div>
     </div>
 
-    <!-- CTA -->
-    <div class="page">
+    <!-- CTA & Disclaimer -->
+    <div class="page page--wide">
       <div class="header-meta">
         <span>あなたへの次のステップ</span>
       </div>
       <div class="page-inner" style="text-align: center;">
-        <h2 style="border: none; text-align: center; font-size: 22px; margin-bottom: 30px;">労務管理の「不安」を「確信」に変えませんか？</h2>
+        <h2 style="border: none; text-align: center; font-size: 22px; margin-bottom: 20px;">労務管理の「不安」を「確信」に変えませんか？</h2>
         
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px;">
-          <div class="card" style="padding: 25px; border-top: 6px solid var(--color-brand);">
-            <h3 style="color: var(--color-brand); font-size: 18px;">無料個別相談（30分）</h3>
-            <p style="font-size: 12px; margin: 15px 0;">現在の賃金体系や就業規則、残業代の計算が適切かどうか、専門的な視点からアドバイスします。</p>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://timerex.net/s/s2525keita3_0912/470321af" width="120" style="margin: 10px 0;" />
-            <p><a href="https://timerex.net/s/s2525keita3_0912/470321af" target="_blank" style="display: inline-block; background: var(--color-brand); color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">日程調整はこちら</a></p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="card" style="padding: 20px; border-top: 6px solid var(--color-brand);">
+            <h3 style="color: var(--color-brand); font-size: 16px;">無料個別相談（30分）</h3>
+            <p style="font-size: 11px; margin: 10px 0;">現在の賃金体系や就業規則、残業代の計算が適切かどうか、アドバイスします。</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://timerex.net/s/s2525keita3_0912/470321af" width="100" />
+            <p><a href="https://timerex.net/s/s2525keita3_0912/470321af" target="_blank" style="display: inline-block; background: var(--color-brand); color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px;">日程調整はこちら</a></p>
           </div>
 
-          <div class="card" style="padding: 25px; border-top: 6px solid var(--color-success);">
-            <h3 style="color: var(--color-success); font-size: 18px;">協会有料会員のご案内</h3>
-            <p style="font-size: 12px; margin: 15px 0;">法改正への対応、実地指導対策、最新の賃金相場データなど、経営に必要な全ての情報を手に入れてください。</p>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://jnhc-mra-lp-new.vercel.app/" width="120" style="margin: 10px 0;" />
-            <p><a href="https://jnhc-mra-lp-new.vercel.app/" target="_blank" style="display: inline-block; background: var(--color-success); color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">詳細を見る</a></p>
+          <div class="card" style="padding: 20px; border-top: 6px solid var(--color-success);">
+            <h3 style="color: var(--color-success); font-size: 16px;">協会有料会員のご案内</h3>
+            <p style="font-size: 11px; margin: 10px 0;">法改正、実地指導対策、賃金相場データなど、経営に必要な全情報を手に入れてください。</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://jnhc-mra-lp-new.vercel.app/" width="100" />
+            <p><a href="https://jnhc-mra-lp-new.vercel.app/" target="_blank" style="display: inline-block; background: var(--color-success); color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px;">詳細を見る</a></p>
+          </div>
+        </div>
+
+        <div class="disclaimer-box">
+          <h3>重要：免責事項および利用規約</h3>
+          <div class="disclaimer-text">
+            <p>1. 本資料は、訪問看護経営における労務管理の一般的な知識提供を目的としたものであり、特定の事案に対する法的アドバイス、社会保険労務士業務、または税務・会計上の助言を構成するものではありません。</p>
+            <p>2. 本資料に掲載された情報は、発行時点の法令・諸規則等に基づいております。法改正や解釈の変更により、情報が最新でなくなる可能性があります。利用者は必ず最新の法令を確認し、必要に応じて弁護士、社会保険労務士等の専門家に相談してください。</p>
+            <p>3. 著者および発行者は、本資料の情報の正確性、完全性、有用性について細心の注意を払っておりますが、これらを保証するものではありません。本資料に基づいて行われた一切の行為、およびその結果生じた損害（直接・間接を問わず）について、理由の如何を問わず一切の責任を負いません。本資料の利用は、利用者の自己責任において行われるものとします。</p>
+            <p>4. 本資料の内容を無断で複製、転載、販売、公衆送信、改変等することは著作権法により禁じられています。個人利用の範囲を超えて利用を希望される場合は、必ず事前に発行者の書面による承諾を得てください。</p>
+            <p>5. 本資料の利用に関連して発生した紛争等については、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
           </div>
         </div>
       </div>
@@ -459,7 +464,8 @@
           <p><strong>著者：</strong>渋谷 慶太</p>
           <hr style="border: none; border-top: 1px solid var(--color-border); margin: 20px 0;" />
           <p style="font-size: 11px; color: var(--color-text-muted); line-height: 1.6;">
-            本資料の内容は法的助言を構成するものではありません。具体的な運用にあたっては、管轄の労働基準監督署や社会保険労務士、弁護士にご相談ください。<br><br>
+            経営を、もっと自由に。労務を、もっと強固に。<br>
+            私たちは訪問看護経営の持続可能な未来を支援します。<br><br>
             © 2025 Japan Nursing Home Care Management Research Association. All Rights Reserved.
           </p>
         </div>
