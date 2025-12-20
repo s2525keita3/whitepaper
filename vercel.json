@@ -2,6 +2,7 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "routes": [
+    { "src": "/", "dest": "/01_nursing_roadmap/index.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
